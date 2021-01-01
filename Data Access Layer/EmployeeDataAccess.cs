@@ -28,7 +28,6 @@ namespace BloodBankManagementSystem.Data_Access_Layer
                 employee.Name = reader["Name"].ToString();
                 employee.Username = reader["Name"].ToString();
                 employee.Email = reader["Name"].ToString();
-                employee.Gender = reader["Name"].ToString();
                 employee.DateOfBirth = (DateTime)reader["DateOfBirth"];
                 employee.BloodGroup = reader["Name"].ToString();
                 employee.Password = reader["Name"].ToString();
@@ -47,7 +46,6 @@ namespace BloodBankManagementSystem.Data_Access_Layer
             employee.Name = reader["Name"].ToString();
             employee.Username = reader["Name"].ToString();
             employee.Email = reader["Name"].ToString();
-            employee.Gender = reader["Name"].ToString();
             employee.DateOfBirth = (DateTime)reader["DateOfBirth"];
             employee.BloodGroup = reader["Name"].ToString();
             employee.Password = reader["Name"].ToString();
@@ -56,14 +54,14 @@ namespace BloodBankManagementSystem.Data_Access_Layer
 
         public int InsertEmployee(Employee employee)
         {
-            string sql = "INSERT INTO Employees(Name, Username, Email, Gender, DateOfBirth, BloodGroup, Password) VALUES('" + employee.Name + "','"+employee.Username+"','"+employee.Email+"','"+employee.Gender+"','"+employee.DateOfBirth+"','"+employee.BloodGroup+"','"+employee.Password+"')";
+            string sql = "INSERT INTO Employees(Name, Username, Email, DateOfBirth, BloodGroup, Password) VALUES('" + employee.Name + "','"+employee.Username+"','"+employee.Email+"','"+employee.DateOfBirth+"','"+employee.BloodGroup+"','"+employee.Password+"')";
             int result = this.dataAccess.ExecuteQuery(sql);
             return result;
         }
 
         public int UpdateEmployee(Employee employee)
         {
-            string sql = "UPDATE Employees SET Name = '" + employee.Name + "', Username = '" + employee.Username + "', Email = '" + employee.Email + "', Gender = '" + employee.Gender + "', DateOfBirth = '" + employee.DateOfBirth + "', BloodGroup = '" + employee.BloodGroup + "', Password = '" + employee.Password + "' WHERE EventId = " + employee.EmployeeId;
+            string sql = "UPDATE Employees SET Name = '" + employee.Name + "', Username = '" + employee.Username + "', Email = '" + employee.Email + "', DateOfBirth = '" + employee.DateOfBirth + "', BloodGroup = '" + employee.BloodGroup + "', Password = '" + employee.Password + "' WHERE EventId = " + employee.EmployeeId;
             int result = this.dataAccess.ExecuteQuery(sql);
             return result;
         }
