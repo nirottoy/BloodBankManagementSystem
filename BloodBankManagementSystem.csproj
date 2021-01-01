@@ -54,6 +54,12 @@
     <Compile Include="Entities\Donor.cs" />
     <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\Inventory.cs" />
+    <Compile Include="Presentation Layer\EmployeeMangement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\EmployeeMangement.Designer.cs">
+      <DependentUpon>EmployeeMangement.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation Layer\EmployeeMangement.resx">
+      <DependentUpon>EmployeeMangement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
