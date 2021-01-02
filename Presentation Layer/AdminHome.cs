@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BloodBankManagementSystem.Presentation_Layer
@@ -36,6 +29,18 @@ namespace BloodBankManagementSystem.Presentation_Layer
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void bloodDonateFAQToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string url = "https://sites.google.com/view/projectbbms/home";
+            faqWebBrowser.Navigate(url);
+        }
+
+        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string url = "https://sites.google.com/view/aboutusbbms/home";
+            faqWebBrowser.Navigate(url);
         }
     }
 }
