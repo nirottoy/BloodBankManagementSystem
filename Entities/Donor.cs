@@ -14,7 +14,8 @@ namespace BloodBankManagementSystem.Entities
         public double Weight { get; set; }
         public string TempPulse { get; set; }
         public double Haemoglobin { get; set; }
-        public string SkinDisease { get; set; }
+        public string Address { get; set; }
+        public string PhoneNumber { get; set; }
         public string MajorHealthIssue { get; set; }
         public string RhFactor { get; set; }
         public string BloodGroup { get; set; }

@@ -21,8 +21,10 @@ namespace BloodBankManagementSystem.Business_Logic_Layer
             return this.employeeDataAccess.GetAllEmployees();
         }
 
-        public int AddNewEmployee(string name, string username, string email, DateTime dateOfBirth, string bloodgroup, string password)
+        public int AddNewEmployee(string name, string username, string email, DateTime dateOfBirth, string bloodgroup, string password, string confirmPassword)
         {
+
+
             Employee employee = new Employee()
             {
                 Name = name,
@@ -38,7 +40,7 @@ namespace BloodBankManagementSystem.Business_Logic_Layer
         {
             Employee employee = new Employee()
             {
-                //EmployeeId = employeeId,
+                EmployeeId = employeeId,
                 Name = name,
                 Username = username,
                 Email = email,

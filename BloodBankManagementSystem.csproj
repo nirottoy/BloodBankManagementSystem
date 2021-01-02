@@ -78,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation Layer\DonorManagement.resx">
+      <DependentUpon>DonorManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\EmployeeManagement.resx">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>
     </EmbeddedResource>

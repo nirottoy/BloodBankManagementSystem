@@ -26,11 +26,11 @@ namespace BloodBankManagementSystem.Data_Access_Layer
                 Employee employee = new Employee();
                 employee.EmployeeId = (int)reader["EmployeeId"];
                 employee.Name = reader["Name"].ToString();
-                employee.Username = reader["Name"].ToString();
-                employee.Email = reader["Name"].ToString();
+                employee.Username = reader["Username"].ToString();
+                employee.Email = reader["Email"].ToString();
                 employee.DateOfBirth = (DateTime)reader["DateOfBirth"];
-                employee.BloodGroup = reader["Name"].ToString();
-                employee.Password = reader["Name"].ToString();
+                employee.BloodGroup = reader["BloodGroup"].ToString();
+                employee.Password = "*****";
                 employees.Add(employee);
             }
             return employees;

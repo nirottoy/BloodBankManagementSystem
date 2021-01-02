@@ -30,7 +30,8 @@ namespace BloodBankManagementSystem.Data_Access_Layer
                 donor.Weight = (Double)reader["Weight"];
                 donor.TempPulse = reader["TempPulse"].ToString();
                 donor.Haemoglobin = (Double)reader["Haemoglobin"];
-                donor.SkinDisease = reader["SkinDisease"].ToString();
+                donor.Address = reader["Address"].ToString();
+                donor.PhoneNumber = reader["PhoneNumber"].ToString();
                 donor.MajorHealthIssue = reader["MajorHealthIssue"].ToString();
                 donor.RhFactor = reader["RhFactor"].ToString();
                 donor.BloodGroup = reader["BloodGroup"].ToString();
@@ -52,24 +53,25 @@ namespace BloodBankManagementSystem.Data_Access_Layer
             donor.Weight = (Double)reader["Weight"];
             donor.TempPulse = reader["TempPulse"].ToString();
             donor.Haemoglobin = (Double)reader["Haemoglobin"];
-            donor.SkinDisease = reader["SkinDisease"].ToString();
-            donor.MajorHealthIssue = reader["MajorHealthIssue"].ToString();
+            donor.Address = reader["Address"].ToString();
+            donor.PhoneNumber = reader["PhoneNumber"].ToString();
             donor.RhFactor = reader["RhFactor"].ToString();
             donor.BloodGroup = reader["BloodGroup"].ToString();
             donor.LastDonatedDate = (DateTime)reader["LastDonatedDate"];
+            donor.MajorHealthIssue = reader["MajorHealthIssue"].ToString();
             return donor;
         }
 
         public int InsertDonor(Donor donor)
         {
-            string sql = "INSERT INTO Donors(Name,Age,Weight,TempPulse,Haemoglobin,SkinDisease,MajorHealthIssues,RhFactor,BloodGroup,LastDonatedDate) VALUES('" + donor.Name + "','" + donor.Age + "','" + donor.Weight + "','" + donor.TempPulse + "','" + donor.Haemoglobin + "','" + donor.SkinDisease + "','" + donor.MajorHealthIssue + "','" + donor.RhFactor + "','" + donor.BloodGroup + "','" + donor.LastDonatedDate + "')";
+            string sql = "INSERT INTO Donors(Name,Age,Weight,TempPulse,Haemoglobin,Address,PhoneNumber,RhFactor,BloodGroup,LastDonatedDate,MajorHealthIssue) VALUES('" + donor.Name + "','" + donor.Age + "','" + donor.Weight + "','" + donor.TempPulse + "','" + donor.Haemoglobin + "','" + donor.Address + "','" + donor.PhoneNumber + "','" + donor.RhFactor + "','" + donor.BloodGroup + "','" + donor.LastDonatedDate + "','" + donor.MajorHealthIssue + "')";
             int result = this.dataAccess.ExecuteQuery(sql);
             return result;
         }
 
         public int UpdateDonor(Donor donor)
         {
-            string sql = "UPDATE Donors SET Name = '" + donor.Name + "', Age = '" + donor.Age + "', Weight = '" + donor.Weight + "', TempPulse = '" + donor.TempPulse + "', Haemoglobin = '" + donor.Haemoglobin + "', SkinDisease = '" + donor.SkinDisease + "', MajorHealthIssue = '" + donor.MajorHealthIssue + "', RhFactor = '" + donor.RhFactor + "', BloodGroup = '" + donor.BloodGroup + "', LastDonatedDate = '" + donor.LastDonatedDate + "' WHERE EventId = " + donor.DonorId;
+            string sql = "UPDATE Donors SET Name = '" + donor.Name + "', Age = '" + donor.Age + "', Weight = '" + donor.Weight + "', TempPulse = '" + donor.TempPulse + "', Haemoglobin = '" + donor.Haemoglobin + "', Address = '" + donor.Address + "', PhoneNumber = '" + donor.PhoneNumber + "', RhFactor = '" + donor.RhFactor + "', BloodGroup = '" + donor.BloodGroup + "', LastDonatedDate = '" + donor.LastDonatedDate + "',MajorHealthIssue = '" + donor.MajorHealthIssue + "' WHERE DonorId = " + donor.DonorId;
             int result = this.dataAccess.ExecuteQuery(sql);
             return result;
         }
@@ -80,7 +82,7 @@ namespace BloodBankManagementSystem.Data_Access_Layer
             int result = this.dataAccess.ExecuteQuery(sql);
             return result;
         }
-        
+
 
     }
 }

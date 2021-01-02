@@ -1,12 +1,6 @@
 ﻿using BloodBankManagementSystem.Business_Logic_Layer;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Mail;
 using System.Windows.Forms;
 
 namespace BloodBankManagementSystem.Presentation_Layer
@@ -16,6 +10,12 @@ namespace BloodBankManagementSystem.Presentation_Layer
         public EmployeeManagement()
         {
             InitializeComponent();
+            recruitButton.Click += this.RefreshGridView;
+            recruitButton.Click += this.ClearFields;
+            updateButton.Click += this.RefreshGridView;
+            updateButton.Click += this.ClearFields;
+            deleteEmployeeButton.Click += this.RefreshGridView;
+            deleteEmployeeButton.Click += this.ClearFields;
         }
 
         private void EmployeeManagement_FormClosing(object sender, FormClosingEventArgs e)
@@ -44,49 +44,61 @@ namespace BloodBankManagementSystem.Presentation_Layer
 
         private void recruitButton_Click(object sender, EventArgs e)
         {
-
             EmployeeService employeeService = new EmployeeService();
 
-
-            int result = employeeService.AddNewEmployee(nameTextbox.Text,
+            if (nameTextbox.Text == "" || usernameTextbox.Text == "" || bgComboBox.Text == "" || passwordTextbox.Text == "" || confirmPasswordTextbox.Text == "")
+            {
+                MessageBox.Show("Fields can not be empty!");
+            }
+            else if (passwordTextbox.Text != confirmPasswordTextbox.Text)
+            {
+                MessageBox.Show("Password doesn't match!");
+            }
+            else if (IsValidEmail(emailTextBox.Text) == false)
+            {
+                MessageBox.Show("Invalid email address.");
+            }
+            else
+            {
+                int result = employeeService.AddNewEmployee(nameTextbox.Text,
                                                   usernameTextbox.Text,
                                                   emailTextBox.Text,
                                                   dobDateTimePicker.Value,
                                                   bgComboBox.Text,
-                                                  passwordTextbox.Text);
-            if (result > 0)
-            {
-                MessageBox.Show("Employee added successfully");
+                                                  passwordTextbox.Text,
+                                                  confirmPasswordTextbox.Text);
+                if (result > 0)
+                {
+                    MessageBox.Show("Employee added successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Error in adding employee.");
+                }
             }
-            else
+        }
+
+        private bool IsValidEmail(string text)
+        {
+            try
             {
-                MessageBox.Show("Error in adding employee.");
+                MailAddress mailAddress = new MailAddress(text);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
             }
         }
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            //EmployeeService employeeService = new EmployeeService();
-
-
-            //int result = employeeService.UpdateEmployee(id, uNameTextbox.Text,);
-            //if (result > 0)
-            //{
-            //    MessageBox.Show("Employee added successfully");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Error in adding employee.");
-            //}
+            
         }
 
         private void employeeDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            id = (int)employeeDataGridView.Rows[e.RowIndex].Cells[0].Value;
-            updateEventNameTextBox.Text = LoadEventsDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
-            UpdateImportanceComboBox.Text = LoadEventsDataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
-            UpdateNoteTextBox.Text = LoadEventsDataGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
-            updateDateTimePicker.Value = (DateTime)LoadEventsDataGridView.Rows[e.RowIndex].Cells[5].Value;
+            
         }
     }
 }
