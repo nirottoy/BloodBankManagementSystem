@@ -49,9 +49,28 @@ namespace BloodBankManagementSystem.Presentation_Layer
         {
             EmployeeService employeeService = new EmployeeService();
 
-            if (nameTextbox.Text == "" || usernameTextbox.Text == "" || bgComboBox.Text == "" || passwordTextbox.Text == "" || confirmPasswordTextbox.Text == "")
+            if (nameTextbox.Text == "")
             {
-                MessageBox.Show("Fields can not be empty!");
+                MessageBox.Show("Name can not be empty");
+            }
+            else if (usernameTextbox.Text == "")
+            {
+                MessageBox.Show("Username can not be empty");
+
+            }
+            else if (bgComboBox.Text == "")
+            {
+                MessageBox.Show("Select Blood Group");
+
+            }
+            else if (passwordTextbox.Text == "")
+            {
+                MessageBox.Show("Password can not be empty");
+
+            }
+            else if (confirmPasswordTextbox.Text == "")
+            {
+                MessageBox.Show("Confirm Password can not be empty");
             }
             else if (passwordTextbox.Text != confirmPasswordTextbox.Text)
             {
@@ -72,7 +91,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
                                                   confirmPasswordTextbox.Text);
                 if (result > 0)
                 {
-                    MessageBox.Show("Employee added successfully");
+                    MessageBox.Show("New Employee Recruited.");
                 }
                 else
                 {
@@ -81,11 +100,11 @@ namespace BloodBankManagementSystem.Presentation_Layer
             }
         }
 
-        private bool IsValidEmail(string text)
+        private bool IsValidEmail(string email)
         {
             try
             {
-                MailAddress mailAddress = new MailAddress(text);
+                MailAddress mailAddress = new MailAddress(email);
                 return true;
             }
             catch (Exception)
@@ -96,7 +115,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            EmployeeService employeeService= new EmployeeService();
+            EmployeeService employeeService = new EmployeeService();
             int result = employeeService.UpdateEmployee(id, uNameTextbox.Text, uUsernameTextBox.Text, uEmailTextBox.Text, uDobdateTimePicker1.Value, uBgcomboBox1.Text);
             if (result > 0)
             {

@@ -6,9 +6,11 @@ namespace BloodBankManagementSystem.Presentation_Layer
 {
     public partial class DonorManagement : Form
     {
+        EmployeeHome employeeHome;
         int id = 0;
-        public DonorManagement()
+        public DonorManagement(EmployeeHome employeeHome)
         {
+            this.employeeHome = employeeHome;
             InitializeComponent();
             doner_insert_button.Click += this.RefreshGridView;
             doner_insert_button.Click += this.ClearFields;
@@ -109,8 +111,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
         {
 
             DonorService donorService = new DonorService();
-
-            int result = donorService.UpdateDonor(id,
+            int result = donorService.UpdateDonor(id, 
                                                   dnrNametxt.Text,
                                                   Convert.ToInt32(dnrAgetxt.Text),
                                                   Convert.ToDouble(dnrWeighttxt.Text),
@@ -124,77 +125,12 @@ namespace BloodBankManagementSystem.Presentation_Layer
                                                   dateTimePicker2.Value);
             if (result > 0)
             {
-                MessageBox.Show("Donor Updated Successfully");
+                MessageBox.Show("Employee details updated successfully");
             }
             else
             {
-                MessageBox.Show("Error in updating donor.");
+                MessageBox.Show("Error in updating employee's details");
             }
-            //if (dnrNametxt.Text == "")
-            //{
-            //    MessageBox.Show("Name can not be empty");
-            //}
-            //else if (Convert.ToInt32(dnrAgetxt.Text) <= 18)
-            //{
-            //    MessageBox.Show("Age must be at least 18.");
-            //}
-            //else if (Convert.ToInt32(dnrWeighttxt.Text) <= 50)
-            //{
-            //    MessageBox.Show("Weight must be at least 50kg.");
-            //}
-            //else if (dnrPulsetxt.Text == "")
-            //{
-            //    MessageBox.Show("Pulse can not be empty");
-            //}
-            //else if (dnrHimoglobintxt.Text == "")
-            //{
-            //    MessageBox.Show("Haemoglobin Rate can not be empty");
-            //}
-            //else if (dnrPntxt.Text == "")
-            //{
-            //    MessageBox.Show("Insert Phone Number");
-            //}
-            //else if (dnrAddresscombo.Text == "")
-            //{
-            //    MessageBox.Show("Insert Address");
-            //}
-            //else if (dnrHealthtxt.Text == "")
-            //{
-            //    MessageBox.Show("Comment on health issues");
-            //}
-            //else if (dnrRhcombo.Text == "")
-            //{
-            //    MessageBox.Show("Select Rh-Factor");
-            //}
-            //else if (dnrBgcombo.Text == "")
-            //{
-            //    MessageBox.Show("Select Blood Group");
-            //}
-            //else
-            //{
-            //    int result = donorService.UpdateDonor(id,
-            //                                            dnrNametxt.Text,
-            //                                            Convert.ToInt32(dnrAgetxt.Text),
-            //                                            Convert.ToDouble(dnrWeighttxt.Text),
-            //                                            dnrPulsetxt.Text,
-            //                                            Convert.ToDouble(dnrHimoglobintxt.Text),
-            //                                            dnrAddresscombo.Text,
-            //                                            dnrPntxt.Text,
-            //                                            dnrHealthtxt.Text,
-            //                                            dnrRhcombo.Text,
-            //                                            dnrBgcombo.Text,
-            //                                            dateTimePicker2.Value);
-
-            //    if (result > 0)
-            //    {
-            //        MessageBox.Show("Donor Updated Successfully");
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Error in updating donor.");
-            //    }
-            //}
-
         }
 
         private void delete_Doner_button_Click(object sender, EventArgs e)
@@ -218,7 +154,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+            id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
             dnrNametxt.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             dnrAgetxt.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             dnrWeighttxt.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
@@ -229,6 +165,12 @@ namespace BloodBankManagementSystem.Presentation_Layer
             dnrHealthtxt.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
             dnrRhcombo.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
             dnrBgcombo.Text = dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
+        }
+
+        private void employeeHomeButtton_Click(object sender, EventArgs e)
+        {
+            employeeHome.Show();
+            this.Hide();
         }
     }
 }

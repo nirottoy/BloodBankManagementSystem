@@ -21,5 +21,12 @@ namespace BloodBankManagementSystem.Presentation_Layer
         {
             Application.Exit();
         }
+
+        private void manageDonorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DonorManagement donorManagement = new DonorManagement(this);
+            donorManagement.Show();
+            this.Hide();
+        }
     }
 }
