@@ -309,9 +309,11 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             this.dateTimePicker2.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Location = new System.Drawing.Point(166, 422);
+            this.dateTimePicker2.MaxDate = new System.DateTime(2000, 12, 31, 23, 59, 0, 0);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 18;
+            this.dateTimePicker2.Value = new System.DateTime(2000, 12, 31, 23, 59, 0, 0);
             // 
             // dnrRhcombo
             // 
@@ -425,6 +427,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.doner_insert_button.TabIndex = 27;
             this.doner_insert_button.Text = "Doner Insert";
             this.doner_insert_button.UseVisualStyleBackColor = true;
+            this.doner_insert_button.Click += new System.EventHandler(this.doner_insert_button_Click);
             // 
             // groupBox1
             // 
@@ -463,9 +466,11 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(175, 412);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2000, 12, 31, 23, 59, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 18;
+            this.dateTimePicker1.Value = new System.DateTime(2000, 12, 25, 23, 59, 0, 0);
             // 
             // label12
             // 
