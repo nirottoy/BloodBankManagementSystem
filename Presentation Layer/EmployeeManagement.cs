@@ -98,7 +98,12 @@ namespace BloodBankManagementSystem.Presentation_Layer
 
         private void employeeDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            //employeeID = (int)employeeDataGridView.Rows[e.RowIndex].Cells[0].Value;
+            uNameTextbox.Text = employeeDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+            uUsernameTextBox.Text = employeeDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
+            uEmailTextBox.Text = employeeDataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+            //dateTimePicker1.Value = employeeDataGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
+            uBgcomboBox1.Text = employeeDataGridView.Rows[e.RowIndex].Cells[5].Value.ToString();
         }
     }
 }
