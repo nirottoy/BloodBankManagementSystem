@@ -34,17 +34,16 @@ namespace BloodBankManagementSystem.Business_Logic_Layer
             };
             return this.employeeDataAccess.InsertEmployee(employee);
         }
-        public int UpdateEmployee(int employeeId, string name, string username, string email, DateTime dateOfBirth, string bloodgroup, string password)
+        public int UpdateEmployee(int id, string name, string username, string email, DateTime dateOfBirth, string bloodgroup)
         {
             Employee employee = new Employee()
             {
-                EmployeeId = employeeId,
+                EmployeeId = id,
                 Name = name,
                 Username = username,
                 Email = email,
                 DateOfBirth = dateOfBirth,
-                BloodGroup = bloodgroup,
-                Password = password
+                BloodGroup = bloodgroup
             };
             return this.employeeDataAccess.UpdateEmployee(employee);
         }
@@ -52,6 +51,10 @@ namespace BloodBankManagementSystem.Business_Logic_Layer
         public int DeleteEmployee(string employeeId)
         {
             return this.employeeDataAccess.DeleteEmployee(Convert.ToInt32(employeeId));
+        }
+        public bool LoginValidation(string username, string password)
+        {
+            return employeeDataAccess.LoginValidation(username, password);
         }
     }
 }

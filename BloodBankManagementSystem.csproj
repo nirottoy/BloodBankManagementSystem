@@ -58,11 +58,29 @@
     <Compile Include="Entities\Donor.cs" />
     <Compile Include="Entities\Employee.cs" />
     <Compile Include="Entities\Inventory.cs" />
+    <Compile Include="Presentation Layer\AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\DonorListForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\DonorListForAdmin.Designer.cs">
+      <DependentUpon>DonorListForAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\DonorManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation Layer\DonorManagement.Designer.cs">
       <DependentUpon>DonorManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\EmployeeHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\EmployeeHome.Designer.cs">
+      <DependentUpon>EmployeeHome.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation Layer\EmployeeManagement.cs">
       <SubType>Form</SubType>
@@ -78,8 +96,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation Layer\AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\DonorListForAdmin.resx">
+      <DependentUpon>DonorListForAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\DonorManagement.resx">
       <DependentUpon>DonorManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\EmployeeHome.resx">
+      <DependentUpon>EmployeeHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\EmployeeManagement.resx">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>

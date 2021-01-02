@@ -48,7 +48,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             {
                 MessageBox.Show("Age must be at least 18.");
             }
-            else if (Convert.ToInt32(addWeighttxt.Text) <= 50)
+            else if (Convert.ToDouble(addWeighttxt.Text) <= 50)
             {
                 MessageBox.Show("Weight must be at least 50kg.");
             }
@@ -218,7 +218,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+            //id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
             dnrNametxt.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             dnrAgetxt.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             dnrWeighttxt.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();

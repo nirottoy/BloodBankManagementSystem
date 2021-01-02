@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BloodBankManagementSystem.Business_Logic_Layer;
+using BloodBankManagementSystem.Presentation_Layer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +22,40 @@ namespace BloodBankManagementSystem
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
-            //MessageBox.Show("Thanks for using our service!");
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            if (usernameTextbox.Text == "" || passwordTextBox.Text == "")
+            {
+                MessageBox.Show("Username or password can not be empty");
+            }
+            else
+            {
+                AdminService adminService = new AdminService();
+                bool resultAdmin = adminService.LoginValidation(usernameTextbox.Text, passwordTextBox.Text);
+                if (resultAdmin)
+                {
+                    AdminHome adminHome = new AdminHome();
+                    adminHome.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    EmployeeService employeeService = new EmployeeService();
+                    bool resultEmployee = employeeService.LoginValidation(usernameTextbox.Text, passwordTextBox.Text);
+                    if (resultEmployee)
+                    {
+                        EmployeeHome employeeHome = new EmployeeHome();
+                        employeeHome.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid User Credentials");
+                    }
+                }
+            }
         }
     }
 }

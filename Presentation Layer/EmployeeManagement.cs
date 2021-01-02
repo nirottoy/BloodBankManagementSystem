@@ -7,13 +7,16 @@ namespace BloodBankManagementSystem.Presentation_Layer
 {
     public partial class EmployeeManagement : Form
     {
-        public EmployeeManagement()
+        AdminHome adminHome;
+        int id = 0;
+        public EmployeeManagement(AdminHome adminHome)
         {
+            this.adminHome = adminHome;
             InitializeComponent();
             recruitButton.Click += this.RefreshGridView;
             recruitButton.Click += this.ClearFields;
-            updateButton.Click += this.RefreshGridView;
-            updateButton.Click += this.ClearFields;
+            UpdateButton.Click += this.RefreshGridView;
+            UpdateButton.Click += this.ClearFields;
             deleteEmployeeButton.Click += this.RefreshGridView;
             deleteEmployeeButton.Click += this.ClearFields;
         }
@@ -39,7 +42,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
         void ClearFields(object sender, EventArgs e)
         {
             nameTextbox.Text = usernameTextbox.Text = emailTextBox.Text = bgComboBox.Text = passwordTextbox.Text = confirmPasswordTextbox.Text = string.Empty;
-            uNameTextbox.Text = uUsernameTextBox.Text = uEmailTextBox.Text = uBgcomboBox1.Text = uPasswordTextbox.Text = uConfirmPasswordTextbox.Text = string.Empty;
+            uNameTextbox.Text = uUsernameTextBox.Text = uEmailTextBox.Text = uBgcomboBox1.Text = string.Empty;
         }
 
         private void recruitButton_Click(object sender, EventArgs e)
@@ -91,19 +94,47 @@ namespace BloodBankManagementSystem.Presentation_Layer
             }
         }
 
-        private void updateButton_Click(object sender, EventArgs e)
+        private void UpdateButton_Click(object sender, EventArgs e)
         {
-            
+            EmployeeService employeeService= new EmployeeService();
+            int result = employeeService.UpdateEmployee(id, uNameTextbox.Text, uUsernameTextBox.Text, uEmailTextBox.Text, uDobdateTimePicker1.Value, uBgcomboBox1.Text);
+            if (result > 0)
+            {
+                MessageBox.Show("Employee details updated successfully");
+            }
+            else
+            {
+                MessageBox.Show("Error in updating employee's details");
+            }
+        }
+
+        private void deleteEmployeeButton_Click(object sender, EventArgs e)
+        {
+            EmployeeService employeeService = new EmployeeService();
+            int result = employeeService.DeleteEmployee(deleteEmIdTextbox.Text);
+            if (result > 0)
+            {
+                MessageBox.Show("Employee deleted successfully");
+            }
+            else
+            {
+                MessageBox.Show("Error in deleting employee");
+            }
         }
 
         private void employeeDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //employeeID = (int)employeeDataGridView.Rows[e.RowIndex].Cells[0].Value;
+            id = (int)employeeDataGridView.Rows[e.RowIndex].Cells[0].Value;
             uNameTextbox.Text = employeeDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
             uUsernameTextBox.Text = employeeDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
             uEmailTextBox.Text = employeeDataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
-            //dateTimePicker1.Value = employeeDataGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
             uBgcomboBox1.Text = employeeDataGridView.Rows[e.RowIndex].Cells[5].Value.ToString();
+        }
+
+        private void adminHomeButton_Click(object sender, EventArgs e)
+        {
+            adminHome.Show();
+            this.Hide();
         }
     }
 }

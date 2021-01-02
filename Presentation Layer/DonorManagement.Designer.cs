@@ -107,7 +107,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.delete_Doner_button.Name = "delete_Doner_button";
             this.delete_Doner_button.Size = new System.Drawing.Size(144, 33);
             this.delete_Doner_button.TabIndex = 27;
-            this.delete_Doner_button.Text = "Doner Delete";
+            this.delete_Doner_button.Text = "Donor Delete";
             this.delete_Doner_button.UseVisualStyleBackColor = true;
             // 
             // deleteIdtxt
@@ -302,7 +302,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.donor_update_button.Name = "donor_update_button";
             this.donor_update_button.Size = new System.Drawing.Size(144, 33);
             this.donor_update_button.TabIndex = 26;
-            this.donor_update_button.Text = "Doner Update";
+            this.donor_update_button.Text = "Donor Update";
             this.donor_update_button.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker2
@@ -406,7 +406,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(12, 243);
+            this.label22.Location = new System.Drawing.Point(12, 251);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(67, 22);
             this.label22.TabIndex = 29;
@@ -425,7 +425,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.doner_insert_button.Name = "doner_insert_button";
             this.doner_insert_button.Size = new System.Drawing.Size(131, 33);
             this.doner_insert_button.TabIndex = 27;
-            this.doner_insert_button.Text = "Doner Insert";
+            this.doner_insert_button.Text = "Donor Insert";
             this.doner_insert_button.UseVisualStyleBackColor = true;
             this.doner_insert_button.Click += new System.EventHandler(this.doner_insert_button_Click);
             // 
