@@ -24,7 +24,7 @@ namespace BloodBankManagementSystem
             Application.Exit();
         }
 
-        private void loginButton_Click(object sender, EventArgs e)
+        private void loginFlatButton_Click(object sender, EventArgs e)
         {
             if (usernameTextbox.Text == "" || passwordTextBox.Text == "")
             {

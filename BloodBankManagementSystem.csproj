@@ -51,6 +51,9 @@
     <Compile Include="Business Logic Layer\DonorService.cs" />
     <Compile Include="Business Logic Layer\EmployeeService.cs" />
     <Compile Include="Business Logic Layer\InvetoryService.cs" />
+    <Compile Include="Customization\FaltButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Data Access Layer\AdminDataAccess.cs" />
     <Compile Include="Data Access Layer\DataAccess.cs" />
     <Compile Include="Data Access Layer\DonorDataAccess.cs" />

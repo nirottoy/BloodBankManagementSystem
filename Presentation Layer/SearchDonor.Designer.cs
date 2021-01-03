@@ -60,10 +60,13 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(10, 132);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(647, 363);
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(647, 322);
             this.dataGridView2.TabIndex = 2;
             // 
             // DonorByDivisionComboBox
@@ -104,10 +107,13 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(10, 132);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(647, 363);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(647, 322);
             this.dataGridView1.TabIndex = 2;
             // 
             // groupBox1
@@ -149,7 +155,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1357, 525);
+            this.ClientSize = new System.Drawing.Size(1381, 575);
             this.Controls.Add(this.searchDonorLogoutButton);
             this.Controls.Add(this.searchDonorHomeButton);
             this.Controls.Add(this.groupBox1);
