@@ -42,5 +42,12 @@ namespace BloodBankManagementSystem.Presentation_Layer
             string url = "https://sites.google.com/view/aboutusbbms/home";
             faqWebBrowser.Navigate(url);
         }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }

@@ -47,5 +47,12 @@ namespace BloodBankManagementSystem.Presentation_Layer
             login.Show();
             this.Hide();
         }
+
+        private void employeeListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EmployeeReadOnly employeeReadOnly = new EmployeeReadOnly();
+            employeeReadOnly.Show();
+            this.Hide();
+        }
     }
 }

@@ -89,6 +89,12 @@
     <Compile Include="Presentation Layer\EmployeeManagement.Designer.cs">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\EmployeeReadOnly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\EmployeeReadOnly.Designer.cs">
+      <DependentUpon>EmployeeReadOnly.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\EmployeeManagement.resx">
       <DependentUpon>EmployeeManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\EmployeeReadOnly.resx">
+      <DependentUpon>EmployeeReadOnly.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

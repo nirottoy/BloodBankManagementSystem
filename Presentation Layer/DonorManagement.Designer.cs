@@ -84,6 +84,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.label1 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.employeeHomeButtton = new System.Windows.Forms.Button();
+            this.logoutButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -657,11 +658,23 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.employeeHomeButtton.UseVisualStyleBackColor = true;
             this.employeeHomeButtton.Click += new System.EventHandler(this.EmployeeHomeButtton_Click);
             // 
+            // logoutButton
+            // 
+            this.logoutButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutButton.Location = new System.Drawing.Point(1206, 519);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Size = new System.Drawing.Size(131, 33);
+            this.logoutButton.TabIndex = 46;
+            this.logoutButton.Text = "Logout";
+            this.logoutButton.UseVisualStyleBackColor = true;
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
+            // 
             // DonorManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 559);
+            this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.employeeHomeButtton);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.dataGridView1);
@@ -742,5 +755,6 @@ namespace BloodBankManagementSystem.Presentation_Layer
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button employeeHomeButtton;
+        private System.Windows.Forms.Button logoutButton;
     }
 }

@@ -38,6 +38,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.faqWebBrowser = new System.Windows.Forms.WebBrowser();
             this.emManagementButton = new System.Windows.Forms.Button();
+            this.employeeListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +57,8 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             this.servicesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.manageDonorToolStripMenuItem,
-            this.SearchDonorToolStripMenuItem});
+            this.SearchDonorToolStripMenuItem,
+            this.employeeListToolStripMenuItem});
             this.servicesToolStripMenuItem.Name = "servicesToolStripMenuItem";
             this.servicesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.servicesToolStripMenuItem.Text = "Services";
@@ -64,14 +66,14 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // manageDonorToolStripMenuItem
             // 
             this.manageDonorToolStripMenuItem.Name = "manageDonorToolStripMenuItem";
-            this.manageDonorToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.manageDonorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.manageDonorToolStripMenuItem.Text = "Manage Donor";
             this.manageDonorToolStripMenuItem.Click += new System.EventHandler(this.ManageDonorToolStripMenuItem_Click);
             // 
             // SearchDonorToolStripMenuItem
             // 
             this.SearchDonorToolStripMenuItem.Name = "SearchDonorToolStripMenuItem";
-            this.SearchDonorToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.SearchDonorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.SearchDonorToolStripMenuItem.Text = "Search Donor";
             this.SearchDonorToolStripMenuItem.Click += new System.EventHandler(this.SearchDonorToolStripMenuItem_Click);
             // 
@@ -119,6 +121,13 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.emManagementButton.UseVisualStyleBackColor = true;
             this.emManagementButton.Click += new System.EventHandler(this.emManagementButton_Click);
             // 
+            // employeeListToolStripMenuItem
+            // 
+            this.employeeListToolStripMenuItem.Name = "employeeListToolStripMenuItem";
+            this.employeeListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.employeeListToolStripMenuItem.Text = "Employee List";
+            this.employeeListToolStripMenuItem.Click += new System.EventHandler(this.employeeListToolStripMenuItem_Click);
+            // 
             // EmployeeHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -149,5 +158,6 @@ namespace BloodBankManagementSystem.Presentation_Layer
         private System.Windows.Forms.ToolStripMenuItem faqBloodDonationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
         private System.Windows.Forms.Button emManagementButton;
+        private System.Windows.Forms.ToolStripMenuItem employeeListToolStripMenuItem;
     }
 }

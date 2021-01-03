@@ -51,10 +51,10 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.donorListForAdminDataGridView.AllowUserToAddRows = false;
             this.donorListForAdminDataGridView.AllowUserToDeleteRows = false;
             this.donorListForAdminDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.donorListForAdminDataGridView.Location = new System.Drawing.Point(12, 116);
+            this.donorListForAdminDataGridView.Location = new System.Drawing.Point(12, 90);
             this.donorListForAdminDataGridView.Name = "donorListForAdminDataGridView";
             this.donorListForAdminDataGridView.ReadOnly = true;
-            this.donorListForAdminDataGridView.Size = new System.Drawing.Size(776, 322);
+            this.donorListForAdminDataGridView.Size = new System.Drawing.Size(776, 348);
             this.donorListForAdminDataGridView.TabIndex = 1;
             // 
             // logoutButton
