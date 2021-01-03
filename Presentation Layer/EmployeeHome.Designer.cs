@@ -29,16 +29,17 @@ namespace BloodBankManagementSystem.Presentation_Layer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeHome));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.servicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageDonorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SearchDonorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employeeListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.faqBloodDonationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.faqWebBrowser = new System.Windows.Forms.WebBrowser();
             this.emManagementButton = new System.Windows.Forms.Button();
-            this.employeeListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.contactUsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(824, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1904, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,6 +78,13 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.SearchDonorToolStripMenuItem.Text = "Search Donor";
             this.SearchDonorToolStripMenuItem.Click += new System.EventHandler(this.SearchDonorToolStripMenuItem_Click);
             // 
+            // employeeListToolStripMenuItem
+            // 
+            this.employeeListToolStripMenuItem.Name = "employeeListToolStripMenuItem";
+            this.employeeListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.employeeListToolStripMenuItem.Text = "Employee List";
+            this.employeeListToolStripMenuItem.Click += new System.EventHandler(this.employeeListToolStripMenuItem_Click);
+            // 
             // contactUsToolStripMenuItem
             // 
             this.contactUsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -102,43 +110,37 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             // faqWebBrowser
             // 
-            this.faqWebBrowser.Location = new System.Drawing.Point(12, 47);
+            this.faqWebBrowser.Location = new System.Drawing.Point(12, 66);
             this.faqWebBrowser.MinimumSize = new System.Drawing.Size(20, 20);
             this.faqWebBrowser.Name = "faqWebBrowser";
             this.faqWebBrowser.ScriptErrorsSuppressed = true;
-            this.faqWebBrowser.Size = new System.Drawing.Size(800, 371);
+            this.faqWebBrowser.Size = new System.Drawing.Size(1880, 963);
             this.faqWebBrowser.TabIndex = 2;
             this.faqWebBrowser.Url = new System.Uri("https://sites.google.com/view/projectbbms/home", System.UriKind.Absolute);
             // 
             // emManagementButton
             // 
             this.emManagementButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emManagementButton.Location = new System.Drawing.Point(721, 424);
+            this.emManagementButton.Location = new System.Drawing.Point(1800, 27);
             this.emManagementButton.Name = "emManagementButton";
-            this.emManagementButton.Size = new System.Drawing.Size(91, 30);
+            this.emManagementButton.Size = new System.Drawing.Size(92, 33);
             this.emManagementButton.TabIndex = 3;
             this.emManagementButton.Text = "Logout";
             this.emManagementButton.UseVisualStyleBackColor = true;
             this.emManagementButton.Click += new System.EventHandler(this.emManagementButton_Click);
             // 
-            // employeeListToolStripMenuItem
-            // 
-            this.employeeListToolStripMenuItem.Name = "employeeListToolStripMenuItem";
-            this.employeeListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.employeeListToolStripMenuItem.Text = "Employee List";
-            this.employeeListToolStripMenuItem.Click += new System.EventHandler(this.employeeListToolStripMenuItem_Click);
-            // 
             // EmployeeHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 464);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.emManagementButton);
             this.Controls.Add(this.faqWebBrowser);
             this.Controls.Add(this.menuStrip1);
             this.Name = "EmployeeHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Blood Bank Management System";
+            this.Text = "Blood Bank Management System - Home(Employee)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EmployeeHome_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -33,6 +33,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.homeButton = new System.Windows.Forms.Button();
             this.donorListForAdminDataGridView = new System.Windows.Forms.DataGridView();
             this.logoutButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.donorListForAdminDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,12 +71,25 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.logoutButton.UseVisualStyleBackColor = true;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(894, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(144, 35);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Donor List";
+            // 
             // DonorListForAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.donorListForAdminDataGridView);
             this.Controls.Add(this.homeButton);
@@ -86,6 +100,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.Load += new System.EventHandler(this.DonorListForAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.donorListForAdminDataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -94,5 +109,6 @@ namespace BloodBankManagementSystem.Presentation_Layer
         private System.Windows.Forms.Button homeButton;
         private System.Windows.Forms.DataGridView donorListForAdminDataGridView;
         private System.Windows.Forms.Button logoutButton;
+        private System.Windows.Forms.Label label1;
     }
 }

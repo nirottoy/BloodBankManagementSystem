@@ -39,6 +39,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.addAdminButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +53,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(375, 228);
+            this.dataGridView1.Size = new System.Drawing.Size(347, 228);
             this.dataGridView1.TabIndex = 5;
             // 
             // logoutButton
@@ -135,6 +136,18 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.label1.TabIndex = 7;
             this.label1.Text = "Username";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(910, 327);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(150, 35);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Admin List";
+            // 
             // AdminListForAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -142,19 +155,21 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.homeButton);
             this.Name = "AdminListForAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AdminListForAdmin";
+            this.Text = "Admin Management";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminListForAdmin_FormClosing);
             this.Load += new System.EventHandler(this.AdminListForAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -169,5 +184,6 @@ namespace BloodBankManagementSystem.Presentation_Layer
         private System.Windows.Forms.Button addAdminButton;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }

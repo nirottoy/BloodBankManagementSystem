@@ -450,7 +450,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // logoutButton
             // 
             this.logoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.Location = new System.Drawing.Point(1802, 951);
+            this.logoutButton.Location = new System.Drawing.Point(1802, 950);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(90, 33);
             this.logoutButton.TabIndex = 26;

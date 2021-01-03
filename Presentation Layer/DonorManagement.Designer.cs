@@ -29,6 +29,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DonorManagement));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.DonorDeleteButton = new System.Windows.Forms.Button();
             this.deleteIdtxt = new System.Windows.Forms.TextBox();
@@ -96,18 +97,18 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(794, 74);
+            this.dataGridView1.Location = new System.Drawing.Point(814, 82);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(555, 281);
+            this.dataGridView1.Size = new System.Drawing.Size(1078, 596);
             this.dataGridView1.TabIndex = 30;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellClick);
             // 
             // DonorDeleteButton
             // 
-            this.DonorDeleteButton.Location = new System.Drawing.Point(399, 113);
+            this.DonorDeleteButton.Location = new System.Drawing.Point(236, 120);
             this.DonorDeleteButton.Name = "DonorDeleteButton";
-            this.DonorDeleteButton.Size = new System.Drawing.Size(144, 33);
+            this.DonorDeleteButton.Size = new System.Drawing.Size(129, 33);
             this.DonorDeleteButton.TabIndex = 27;
             this.DonorDeleteButton.Text = "Delete Donor";
             this.DonorDeleteButton.UseVisualStyleBackColor = true;
@@ -115,20 +116,21 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             // deleteIdtxt
             // 
-            this.deleteIdtxt.Location = new System.Drawing.Point(254, 67);
+            this.deleteIdtxt.Location = new System.Drawing.Point(126, 63);
             this.deleteIdtxt.Name = "deleteIdtxt";
-            this.deleteIdtxt.Size = new System.Drawing.Size(289, 26);
+            this.deleteIdtxt.Size = new System.Drawing.Size(239, 26);
             this.deleteIdtxt.TabIndex = 15;
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.Info;
             this.groupBox3.Controls.Add(this.DonorDeleteButton);
             this.groupBox3.Controls.Add(this.deleteIdtxt);
             this.groupBox3.Controls.Add(this.label21);
             this.groupBox3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(794, 361);
+            this.groupBox3.Location = new System.Drawing.Point(408, 519);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(555, 152);
+            this.groupBox3.Size = new System.Drawing.Size(380, 159);
             this.groupBox3.TabIndex = 29;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Delete Donor";
@@ -137,7 +139,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(6, 67);
+            this.label21.Location = new System.Drawing.Point(6, 63);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(71, 22);
             this.label21.TabIndex = 1;
@@ -162,6 +164,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.Info;
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label13);
@@ -309,7 +312,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             // DonorUpdateButton
             // 
-            this.DonorUpdateButton.Location = new System.Drawing.Point(126, 462);
+            this.DonorUpdateButton.Location = new System.Drawing.Point(218, 462);
             this.DonorUpdateButton.Name = "DonorUpdateButton";
             this.DonorUpdateButton.Size = new System.Drawing.Size(144, 33);
             this.DonorUpdateButton.TabIndex = 26;
@@ -425,7 +428,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             // DonorInsertButton
             // 
-            this.DonorInsertButton.Location = new System.Drawing.Point(109, 462);
+            this.DonorInsertButton.Location = new System.Drawing.Point(240, 462);
             this.DonorInsertButton.Name = "DonorInsertButton";
             this.DonorInsertButton.Size = new System.Drawing.Size(131, 33);
             this.DonorInsertButton.TabIndex = 27;
@@ -435,6 +438,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Info;
             this.groupBox1.Controls.Add(this.addAddresscombo);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.addPntxt);
@@ -640,19 +644,21 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(1044, 37);
+            this.label24.BackColor = System.Drawing.Color.Transparent;
+            this.label24.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label24.Location = new System.Drawing.Point(1338, 32);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(82, 22);
+            this.label24.Size = new System.Drawing.Size(144, 35);
             this.label24.TabIndex = 45;
             this.label24.Text = "Donor List";
             // 
             // employeeHomeButtton
             // 
             this.employeeHomeButtton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employeeHomeButtton.Location = new System.Drawing.Point(1206, 12);
+            this.employeeHomeButtton.Location = new System.Drawing.Point(1765, 32);
             this.employeeHomeButtton.Name = "employeeHomeButtton";
-            this.employeeHomeButtton.Size = new System.Drawing.Size(131, 33);
+            this.employeeHomeButtton.Size = new System.Drawing.Size(127, 33);
             this.employeeHomeButtton.TabIndex = 31;
             this.employeeHomeButtton.Text = "Home";
             this.employeeHomeButtton.UseVisualStyleBackColor = true;
@@ -661,9 +667,9 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // logoutButton
             // 
             this.logoutButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.Location = new System.Drawing.Point(1206, 519);
+            this.logoutButton.Location = new System.Drawing.Point(1802, 950);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(131, 33);
+            this.logoutButton.Size = new System.Drawing.Size(90, 33);
             this.logoutButton.TabIndex = 46;
             this.logoutButton.Text = "Logout";
             this.logoutButton.UseVisualStyleBackColor = true;
@@ -673,7 +679,8 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1357, 559);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.employeeHomeButtton);
             this.Controls.Add(this.label24);
@@ -683,7 +690,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.Controls.Add(this.groupBox1);
             this.Name = "DonorManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DonorManagement";
+            this.Text = "Blood Bank Management System - Doonor Management";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DonorManagement_FormClosing);
             this.Load += new System.EventHandler(this.DonorManagement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
