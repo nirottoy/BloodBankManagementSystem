@@ -24,7 +24,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             Application.Exit();
         }
 
-        private void homeButton_Click(object sender, EventArgs e)
+        private void HomeButton_Click(object sender, EventArgs e)
         {
             adminHome.Show();
             this.Hide();

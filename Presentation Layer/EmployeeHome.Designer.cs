@@ -65,7 +65,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.manageDonorToolStripMenuItem.Name = "manageDonorToolStripMenuItem";
             this.manageDonorToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.manageDonorToolStripMenuItem.Text = "Manage Donor";
-            this.manageDonorToolStripMenuItem.Click += new System.EventHandler(this.manageDonorToolStripMenuItem_Click);
+            this.manageDonorToolStripMenuItem.Click += new System.EventHandler(this.ManageDonorToolStripMenuItem_Click);
             // 
             // searchDonorToolStripMenuItem
             // 
@@ -97,14 +97,14 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.faqBloodDonationToolStripMenuItem.Name = "faqBloodDonationToolStripMenuItem";
             this.faqBloodDonationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.faqBloodDonationToolStripMenuItem.Text = "Blood Donate FAQ";
-            this.faqBloodDonationToolStripMenuItem.Click += new System.EventHandler(this.faqBloodDonationToolStripMenuItem_Click);
+            this.faqBloodDonationToolStripMenuItem.Click += new System.EventHandler(this.FaqBloodDonationToolStripMenuItem_Click);
             // 
             // aboutUsToolStripMenuItem
             // 
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
             this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutUsToolStripMenuItem.Text = "About Us";
-            this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
+            this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.AboutUsToolStripMenuItem_Click);
             // 
             // EmployeeHome
             // 

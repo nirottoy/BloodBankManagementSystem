@@ -15,20 +15,20 @@ namespace BloodBankManagementSystem.Presentation_Layer
             Application.Exit();
         }
 
-        private void manageDonorToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ManageDonorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DonorManagement donorManagement = new DonorManagement(this);
             donorManagement.Show();
             this.Hide();
         }
 
-        private void faqBloodDonationToolStripMenuItem_Click(object sender, EventArgs e)
+        private void FaqBloodDonationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string url = "https://sites.google.com/view/projectbbms/home";
             faqWebBrowser.Navigate(url);
         }
 
-        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AboutUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string url = "https://sites.google.com/view/aboutusbbms/home";
             faqWebBrowser.Navigate(url);

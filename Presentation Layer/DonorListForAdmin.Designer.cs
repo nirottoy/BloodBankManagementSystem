@@ -41,7 +41,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.homeButton.TabIndex = 0;
             this.homeButton.Text = "Home";
             this.homeButton.UseVisualStyleBackColor = true;
-            this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
+            this.homeButton.Click += new System.EventHandler(this.HomeButton_Click);
             // 
             // DonorListForAdmin
             // 

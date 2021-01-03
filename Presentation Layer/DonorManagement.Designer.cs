@@ -100,7 +100,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(555, 281);
             this.dataGridView1.TabIndex = 30;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellClick);
             // 
             // delete_Doner_button
             // 
@@ -428,7 +428,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.doner_insert_button.TabIndex = 27;
             this.doner_insert_button.Text = "Donor Insert";
             this.doner_insert_button.UseVisualStyleBackColor = true;
-            this.doner_insert_button.Click += new System.EventHandler(this.doner_insert_button_Click);
+            this.doner_insert_button.Click += new System.EventHandler(this.Doner_insert_button_Click);
             // 
             // groupBox1
             // 
@@ -653,7 +653,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.employeeHomeButtton.TabIndex = 31;
             this.employeeHomeButtton.Text = "Home";
             this.employeeHomeButtton.UseVisualStyleBackColor = true;
-            this.employeeHomeButtton.Click += new System.EventHandler(this.employeeHomeButtton_Click);
+            this.employeeHomeButtton.Click += new System.EventHandler(this.EmployeeHomeButtton_Click);
             // 
             // DonorManagement
             // 

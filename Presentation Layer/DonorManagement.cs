@@ -38,7 +38,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             dataGridView1.DataSource = ds.GetAllListOfDoners();
         }
 
-        private void doner_insert_button_Click(object sender, EventArgs e)
+        private void Doner_insert_button_Click(object sender, EventArgs e)
         {
             DonorService donorService = new DonorService();
 
@@ -107,7 +107,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             }
         }
 
-        private void donor_update_button_Click(object sender, EventArgs e)
+        private void Donor_update_button_Click(object sender, EventArgs e)
         {
 
             DonorService donorService = new DonorService();
@@ -133,7 +133,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             }
         }
 
-        private void delete_Doner_button_Click(object sender, EventArgs e)
+        private void Delete_Doner_button_Click(object sender, EventArgs e)
         {
             DonorService ds = new DonorService();
             int result = ds.DeleteEvent(deleteIdtxt.Text);
@@ -152,7 +152,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             Application.Exit();
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
             dnrNametxt.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
@@ -167,7 +167,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             dnrBgcombo.Text = dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
         }
 
-        private void employeeHomeButtton_Click(object sender, EventArgs e)
+        private void EmployeeHomeButtton_Click(object sender, EventArgs e)
         {
             employeeHome.Show();
             this.Hide();

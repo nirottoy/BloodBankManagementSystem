@@ -45,7 +45,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             uNameTextbox.Text = uUsernameTextBox.Text = uEmailTextBox.Text = uBgcomboBox1.Text = string.Empty;
         }
 
-        private void recruitButton_Click(object sender, EventArgs e)
+        private void RecruitButton_Click(object sender, EventArgs e)
         {
             EmployeeService employeeService = new EmployeeService();
 
@@ -127,7 +127,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             }
         }
 
-        private void deleteEmployeeButton_Click(object sender, EventArgs e)
+        private void DeleteEmployeeButton_Click(object sender, EventArgs e)
         {
             EmployeeService employeeService = new EmployeeService();
             int result = employeeService.DeleteEmployee(deleteEmIdTextbox.Text);
@@ -141,7 +141,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             }
         }
 
-        private void employeeDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void EmployeeDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             id = (int)employeeDataGridView.Rows[e.RowIndex].Cells[0].Value;
             uNameTextbox.Text = employeeDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
@@ -152,7 +152,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
 
         
 
-        private void employeeHomeButton_Click(object sender, EventArgs e)
+        private void EmployeeHomeButton_Click(object sender, EventArgs e)
         {
             adminHome.Show();
             this.Hide();
