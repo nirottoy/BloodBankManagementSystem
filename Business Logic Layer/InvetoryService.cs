@@ -8,5 +8,6 @@ namespace BloodBankManagementSystem.Business_Logic_Layer
 {
     class InvetoryService
     {
+        //null commit
     }
 }
