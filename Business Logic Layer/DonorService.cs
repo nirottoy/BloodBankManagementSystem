@@ -66,5 +66,25 @@ namespace BloodBankManagementSystem.Business_Logic_Layer
             return this.donorAccess.DeleteDonor(Convert.ToInt32(dnrId));
 
         }
+
+        public List<string> GetBloodGroupList()
+        {
+            return this.donorAccess.GetBloodGroup();
+        }
+
+        public List<string> GetAddressList()
+        {
+            return this.donorAccess.GetAddress();
+        }
+
+        public List<Donor> GetBloodGroupListForSearch(string bg)
+        {
+            return donorAccess.GetDonorForSearch(bg);
+        }
+
+        public List<Donor> GetDnrByAddressSearch(string address)
+        {
+            return donorAccess.GetDonorByAddressSearch(address);
+        }
     }
 }

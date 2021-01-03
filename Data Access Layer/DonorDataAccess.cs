@@ -83,6 +83,80 @@ namespace BloodBankManagementSystem.Data_Access_Layer
             return result;
         }
 
+        public List<Donor> GetDonorForSearch(string bloodGroup)
+        {
+            string sql = "SELECT * FROM Donors WHERE BloodGroup LIKE '" + bloodGroup + "'";
+            this.dataAccess = new DataAccess();
+            SqlDataReader reader = this.dataAccess.GetData(sql);
+            List<Donor> donors = new List<Donor>();
+            while (reader.Read())
+            {
+                Donor donor = new Donor();
+                donor.DonorId = (int)reader["DonorId"];
+                donor.Name = reader["Name"].ToString();
+                donor.Age = (int)reader["Age"];
+                donor.Weight = (double)reader["Weight"];
+                donor.TempPulse = reader["TempPulse"].ToString();
+                donor.Haemoglobin = (Double)reader["Haemoglobin"];
+                donor.Address = reader["Address"].ToString();
+                donor.PhoneNumber = reader["PhoneNumber"].ToString();
+                donor.MajorHealthIssue = reader["MajorHealthIssue"].ToString();
+                donor.RhFactor = reader["RhFactor"].ToString();
+                donor.BloodGroup = reader["BloodGroup"].ToString();
+                donor.LastDonatedDate = (DateTime)reader["LastDonatedDate"];
+                donors.Add(donor);
+            }
+            return donors;
+        }
 
+        public List<Donor> GetDonorByAddressSearch(string address)
+        {
+            string sql = "SELECT * FROM Donors WHERE Address LIKE '" + address + "'";
+            this.dataAccess = new DataAccess();
+            SqlDataReader reader = this.dataAccess.GetData(sql);
+            List<Donor> donors = new List<Donor>();
+            while (reader.Read())
+            {
+                Donor donor = new Donor();
+                donor.DonorId = (int)reader["DonorId"];
+                donor.Name = reader["Name"].ToString();
+                donor.Age = (int)reader["Age"];
+                donor.Weight = (double)reader["Weight"];
+                donor.TempPulse = reader["TempPulse"].ToString();
+                donor.Haemoglobin = (Double)reader["Haemoglobin"];
+                donor.Address = reader["Address"].ToString();
+                donor.PhoneNumber = reader["PhoneNumber"].ToString();
+                donor.MajorHealthIssue = reader["MajorHealthIssue"].ToString();
+                donor.RhFactor = reader["RhFactor"].ToString();
+                donor.BloodGroup = reader["BloodGroup"].ToString();
+                donor.LastDonatedDate = (DateTime)reader["LastDonatedDate"];
+                donors.Add(donor);
+            }
+            return donors;
+        }
+
+        public List<string> GetBloodGroup()
+        {
+            string sql = "SELECT * FROM Donors";
+            SqlDataReader reader = this.dataAccess.GetData(sql);
+            List<string> bloodGroups = new List<string>();
+            while (reader.Read())
+            {
+                bloodGroups.Add(reader["BloodGroup"].ToString());
+            }
+            return bloodGroups;
+        }
+
+        public List<string> GetAddress()
+        {
+            string sql = "SELECT * FROM Donors";
+            SqlDataReader reader = this.dataAccess.GetData(sql);
+            List<string> address = new List<string>();
+            while (reader.Read())
+            {
+                address.Add(reader["Address"].ToString());
+            }
+            return address;
+        }
     }
 }
