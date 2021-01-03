@@ -38,6 +38,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.searchDonorHomeButton = new System.Windows.Forms.Button();
+            this.searchDonorLogoutButton = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -125,7 +126,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // searchDonorHomeButton
             // 
             this.searchDonorHomeButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchDonorHomeButton.Location = new System.Drawing.Point(1250, 12);
+            this.searchDonorHomeButton.Location = new System.Drawing.Point(12, 12);
             this.searchDonorHomeButton.Name = "searchDonorHomeButton";
             this.searchDonorHomeButton.Size = new System.Drawing.Size(89, 35);
             this.searchDonorHomeButton.TabIndex = 3;
@@ -133,11 +134,23 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.searchDonorHomeButton.UseVisualStyleBackColor = true;
             this.searchDonorHomeButton.Click += new System.EventHandler(this.searchDonorHomeButton_Click);
             // 
+            // searchDonorLogoutButton
+            // 
+            this.searchDonorLogoutButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchDonorLogoutButton.Location = new System.Drawing.Point(1256, 12);
+            this.searchDonorLogoutButton.Name = "searchDonorLogoutButton";
+            this.searchDonorLogoutButton.Size = new System.Drawing.Size(89, 35);
+            this.searchDonorLogoutButton.TabIndex = 4;
+            this.searchDonorLogoutButton.Text = "Logout";
+            this.searchDonorLogoutButton.UseVisualStyleBackColor = true;
+            this.searchDonorLogoutButton.Click += new System.EventHandler(this.searchDonorLogoutButton_Click);
+            // 
             // SearchDonor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 525);
+            this.Controls.Add(this.searchDonorLogoutButton);
             this.Controls.Add(this.searchDonorHomeButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
@@ -166,5 +179,6 @@ namespace BloodBankManagementSystem.Presentation_Layer
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button searchDonorHomeButton;
+        private System.Windows.Forms.Button searchDonorLogoutButton;
     }
 }
