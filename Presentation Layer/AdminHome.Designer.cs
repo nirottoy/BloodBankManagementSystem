@@ -112,7 +112,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // faqWebBrowser
             // 
             this.faqWebBrowser.Location = new System.Drawing.Point(16, 81);
-            this.faqWebBrowser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.faqWebBrowser.Margin = new System.Windows.Forms.Padding(4);
             this.faqWebBrowser.MinimumSize = new System.Drawing.Size(27, 25);
             this.faqWebBrowser.Name = "faqWebBrowser";
             this.faqWebBrowser.ScriptErrorsSuppressed = true;
@@ -123,10 +123,10 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // logoutButton
             // 
             this.logoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.Location = new System.Drawing.Point(963, 33);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logoutButton.Location = new System.Drawing.Point(961, 33);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(4);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(120, 41);
+            this.logoutButton.Size = new System.Drawing.Size(122, 41);
             this.logoutButton.TabIndex = 4;
             this.logoutButton.Text = "Logout";
             this.logoutButton.UseVisualStyleBackColor = true;
@@ -141,7 +141,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.Controls.Add(this.faqWebBrowser);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminHome";
