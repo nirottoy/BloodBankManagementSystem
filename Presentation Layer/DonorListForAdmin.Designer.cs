@@ -29,6 +29,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DonorListForAdmin));
             this.homeButton = new System.Windows.Forms.Button();
             this.donorListForAdminDataGridView = new System.Windows.Forms.DataGridView();
             this.logoutButton = new System.Windows.Forms.Button();
@@ -38,10 +39,9 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // homeButton
             // 
             this.homeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeButton.Location = new System.Drawing.Point(931, 15);
-            this.homeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.homeButton.Location = new System.Drawing.Point(1802, 12);
             this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(120, 41);
+            this.homeButton.Size = new System.Drawing.Size(90, 33);
             this.homeButton.TabIndex = 0;
             this.homeButton.Text = "Home";
             this.homeButton.UseVisualStyleBackColor = true;
@@ -52,21 +52,19 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.donorListForAdminDataGridView.AllowUserToAddRows = false;
             this.donorListForAdminDataGridView.AllowUserToDeleteRows = false;
             this.donorListForAdminDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.donorListForAdminDataGridView.Location = new System.Drawing.Point(16, 111);
-            this.donorListForAdminDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.donorListForAdminDataGridView.Location = new System.Drawing.Point(331, 112);
             this.donorListForAdminDataGridView.Name = "donorListForAdminDataGridView";
             this.donorListForAdminDataGridView.ReadOnly = true;
             this.donorListForAdminDataGridView.RowHeadersWidth = 51;
-            this.donorListForAdminDataGridView.Size = new System.Drawing.Size(1035, 428);
+            this.donorListForAdminDataGridView.Size = new System.Drawing.Size(1242, 600);
             this.donorListForAdminDataGridView.TabIndex = 1;
             // 
             // logoutButton
             // 
             this.logoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.Location = new System.Drawing.Point(924, 63);
-            this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logoutButton.Location = new System.Drawing.Point(1802, 924);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(127, 41);
+            this.logoutButton.Size = new System.Drawing.Size(90, 33);
             this.logoutButton.TabIndex = 2;
             this.logoutButton.Text = "Logout";
             this.logoutButton.UseVisualStyleBackColor = true;
@@ -74,16 +72,16 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             // DonorListForAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.donorListForAdminDataGridView);
             this.Controls.Add(this.homeButton);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DonorListForAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DonorListForAdmin";
+            this.Text = "Blood Bank Management System - Donor List (Read-Only)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DonorListForAdmin_FormClosing);
             this.Load += new System.EventHandler(this.DonorListForAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.donorListForAdminDataGridView)).EndInit();

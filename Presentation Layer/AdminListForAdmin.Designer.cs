@@ -48,19 +48,19 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(1100, 51);
+            this.dataGridView1.Location = new System.Drawing.Point(810, 365);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(336, 228);
+            this.dataGridView1.Size = new System.Drawing.Size(375, 228);
             this.dataGridView1.TabIndex = 5;
             // 
             // logoutButton
             // 
             this.logoutButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.Location = new System.Drawing.Point(1331, 571);
+            this.logoutButton.Location = new System.Drawing.Point(1775, 951);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(105, 33);
+            this.logoutButton.Size = new System.Drawing.Size(117, 35);
             this.logoutButton.TabIndex = 4;
             this.logoutButton.Text = "Logout";
             this.logoutButton.UseVisualStyleBackColor = true;
@@ -69,7 +69,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // homeButton
             // 
             this.homeButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeButton.Location = new System.Drawing.Point(1357, 12);
+            this.homeButton.Location = new System.Drawing.Point(1813, 12);
             this.homeButton.Name = "homeButton";
             this.homeButton.Size = new System.Drawing.Size(79, 33);
             this.homeButton.TabIndex = 3;
@@ -84,32 +84,32 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.groupBox1.Controls.Add(this.addAdminButton);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(617, 267);
+            this.groupBox1.Size = new System.Drawing.Size(634, 220);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Admin";
             // 
             // addAdminPasswordTextbox
             // 
-            this.addAdminPasswordTextbox.Location = new System.Drawing.Point(197, 135);
+            this.addAdminPasswordTextbox.Location = new System.Drawing.Point(197, 97);
             this.addAdminPasswordTextbox.Name = "addAdminPasswordTextbox";
             this.addAdminPasswordTextbox.PasswordChar = '*';
-            this.addAdminPasswordTextbox.Size = new System.Drawing.Size(414, 39);
+            this.addAdminPasswordTextbox.Size = new System.Drawing.Size(414, 26);
             this.addAdminPasswordTextbox.TabIndex = 11;
             // 
             // addAdminUsernameTextbox
             // 
-            this.addAdminUsernameTextbox.Location = new System.Drawing.Point(197, 63);
+            this.addAdminUsernameTextbox.Location = new System.Drawing.Point(197, 39);
             this.addAdminUsernameTextbox.Name = "addAdminUsernameTextbox";
-            this.addAdminUsernameTextbox.Size = new System.Drawing.Size(414, 39);
+            this.addAdminUsernameTextbox.Size = new System.Drawing.Size(414, 26);
             this.addAdminUsernameTextbox.TabIndex = 10;
             // 
             // addAdminButton
             // 
-            this.addAdminButton.Location = new System.Drawing.Point(439, 210);
+            this.addAdminButton.Location = new System.Drawing.Point(439, 152);
             this.addAdminButton.Name = "addAdminButton";
             this.addAdminButton.Size = new System.Drawing.Size(172, 51);
             this.addAdminButton.TabIndex = 9;
@@ -120,18 +120,18 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 135);
+            this.label2.Location = new System.Drawing.Point(23, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 35);
+            this.label2.Size = new System.Drawing.Size(75, 22);
             this.label2.TabIndex = 8;
             this.label2.Text = "Password";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 63);
+            this.label1.Location = new System.Drawing.Point(23, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 35);
+            this.label1.Size = new System.Drawing.Size(79, 22);
             this.label1.TabIndex = 7;
             this.label1.Text = "Username";
             // 
@@ -141,7 +141,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1450, 616);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.logoutButton);
