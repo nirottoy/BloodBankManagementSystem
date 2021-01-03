@@ -33,11 +33,11 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.logoutButton = new System.Windows.Forms.Button();
             this.homeButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.addAdminButton = new System.Windows.Forms.Button();
-            this.addAdminUsernameTextbox = new System.Windows.Forms.TextBox();
             this.addAdminPasswordTextbox = new System.Windows.Forms.TextBox();
+            this.addAdminUsernameTextbox = new System.Windows.Forms.TextBox();
+            this.addAdminButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -47,18 +47,21 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(364, 51);
+            this.dataGridView1.Location = new System.Drawing.Point(485, 63);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(410, 348);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(547, 428);
             this.dataGridView1.TabIndex = 5;
             // 
             // logoutButton
             // 
             this.logoutButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.Location = new System.Drawing.Point(695, 405);
+            this.logoutButton.Location = new System.Drawing.Point(892, 498);
+            this.logoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logoutButton.Name = "logoutButton";
-            this.logoutButton.Size = new System.Drawing.Size(79, 33);
+            this.logoutButton.Size = new System.Drawing.Size(140, 41);
             this.logoutButton.TabIndex = 4;
             this.logoutButton.Text = "Logout";
             this.logoutButton.UseVisualStyleBackColor = true;
@@ -67,9 +70,10 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // homeButton
             // 
             this.homeButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeButton.Location = new System.Drawing.Point(695, 12);
+            this.homeButton.Location = new System.Drawing.Point(927, 15);
+            this.homeButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(79, 33);
+            this.homeButton.Size = new System.Drawing.Size(105, 41);
             this.homeButton.TabIndex = 3;
             this.homeButton.Text = "Home";
             this.homeButton.UseVisualStyleBackColor = true;
@@ -83,65 +87,73 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(16, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(346, 166);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(461, 204);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Add Admin";
             // 
-            // label1
+            // addAdminPasswordTextbox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 22);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Username";
+            this.addAdminPasswordTextbox.Location = new System.Drawing.Point(195, 100);
+            this.addAdminPasswordTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addAdminPasswordTextbox.Name = "addAdminPasswordTextbox";
+            this.addAdminPasswordTextbox.PasswordChar = '*';
+            this.addAdminPasswordTextbox.Size = new System.Drawing.Size(257, 31);
+            this.addAdminPasswordTextbox.TabIndex = 11;
             // 
-            // label2
+            // addAdminUsernameTextbox
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 22);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Password";
+            this.addAdminUsernameTextbox.Location = new System.Drawing.Point(195, 48);
+            this.addAdminUsernameTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addAdminUsernameTextbox.Name = "addAdminUsernameTextbox";
+            this.addAdminUsernameTextbox.Size = new System.Drawing.Size(257, 31);
+            this.addAdminUsernameTextbox.TabIndex = 10;
             // 
             // addAdminButton
             // 
-            this.addAdminButton.Location = new System.Drawing.Point(265, 128);
+            this.addAdminButton.Location = new System.Drawing.Point(303, 158);
+            this.addAdminButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addAdminButton.Name = "addAdminButton";
-            this.addAdminButton.Size = new System.Drawing.Size(75, 32);
+            this.addAdminButton.Size = new System.Drawing.Size(150, 39);
             this.addAdminButton.TabIndex = 9;
             this.addAdminButton.Text = "Add Admin";
             this.addAdminButton.UseVisualStyleBackColor = true;
             this.addAdminButton.Click += new System.EventHandler(this.addAdminButton_Click);
             // 
-            // addAdminUsernameTextbox
+            // label2
             // 
-            this.addAdminUsernameTextbox.Location = new System.Drawing.Point(146, 39);
-            this.addAdminUsernameTextbox.Name = "addAdminUsernameTextbox";
-            this.addAdminUsernameTextbox.Size = new System.Drawing.Size(194, 26);
-            this.addAdminUsernameTextbox.TabIndex = 10;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(31, 100);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 26);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Password";
             // 
-            // addAdminPasswordTextbox
+            // label1
             // 
-            this.addAdminPasswordTextbox.Location = new System.Drawing.Point(146, 81);
-            this.addAdminPasswordTextbox.Name = "addAdminPasswordTextbox";
-            this.addAdminPasswordTextbox.PasswordChar = '*';
-            this.addAdminPasswordTextbox.Size = new System.Drawing.Size(194, 26);
-            this.addAdminPasswordTextbox.TabIndex = 11;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(31, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 26);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Username";
             // 
             // AdminListForAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.homeButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AdminListForAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminListForAdmin";
