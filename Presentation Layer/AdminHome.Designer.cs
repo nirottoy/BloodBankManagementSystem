@@ -34,10 +34,10 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.employeeManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.donorsDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.faqWebBrowser = new System.Windows.Forms.WebBrowser();
             this.contactUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bloodDonateFAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.faqWebBrowser = new System.Windows.Forms.WebBrowser();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,24 +83,14 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
-            // faqWebBrowser
-            // 
-            this.faqWebBrowser.Location = new System.Drawing.Point(12, 47);
-            this.faqWebBrowser.MinimumSize = new System.Drawing.Size(20, 20);
-            this.faqWebBrowser.Name = "faqWebBrowser";
-            this.faqWebBrowser.ScriptErrorsSuppressed = true;
-            this.faqWebBrowser.Size = new System.Drawing.Size(800, 405);
-            this.faqWebBrowser.TabIndex = 1;
-            this.faqWebBrowser.Url = new System.Uri("https://sites.google.com/view/projectbbms/home", System.UriKind.Absolute);
-            // 
             // contactUsToolStripMenuItem
             // 
             this.contactUsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bloodDonateFAQToolStripMenuItem,
             this.aboutUsToolStripMenuItem});
             this.contactUsToolStripMenuItem.Name = "contactUsToolStripMenuItem";
-            this.contactUsToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.contactUsToolStripMenuItem.Text = "Contact Us";
+            this.contactUsToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.contactUsToolStripMenuItem.Text = "Help";
             // 
             // bloodDonateFAQToolStripMenuItem
             // 
@@ -115,6 +105,16 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutUsToolStripMenuItem.Text = "About Us";
             this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.AboutUsToolStripMenuItem_Click);
+            // 
+            // faqWebBrowser
+            // 
+            this.faqWebBrowser.Location = new System.Drawing.Point(12, 47);
+            this.faqWebBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+            this.faqWebBrowser.Name = "faqWebBrowser";
+            this.faqWebBrowser.ScriptErrorsSuppressed = true;
+            this.faqWebBrowser.Size = new System.Drawing.Size(800, 405);
+            this.faqWebBrowser.TabIndex = 1;
+            this.faqWebBrowser.Url = new System.Uri("https://sites.google.com/view/projectbbms/home", System.UriKind.Absolute);
             // 
             // AdminHome
             // 

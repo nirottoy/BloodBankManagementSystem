@@ -1,12 +1,5 @@
 ﻿using BloodBankManagementSystem.Business_Logic_Layer;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BloodBankManagementSystem.Presentation_Layer
@@ -18,6 +11,10 @@ namespace BloodBankManagementSystem.Presentation_Layer
         {
             this.employeeHome = employeeHome;
             InitializeComponent();
+        }
+        private void SearchDonor_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
 
         private void SearchDonor_Load(object sender, EventArgs e)
@@ -41,5 +38,14 @@ namespace BloodBankManagementSystem.Presentation_Layer
             DonorService donorService = new DonorService();
             dataGridView2.DataSource = donorService.GetDnrByAddressSearch(DonorByDivisionComboBox.Text);
         }
+
+        private void searchDonorHomeButton_Click(object sender, EventArgs e)
+        {
+            EmployeeHome eh = new EmployeeHome();
+            eh.Show();
+            this.Hide();
+        }
+
+        
     }
 }

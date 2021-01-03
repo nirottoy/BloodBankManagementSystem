@@ -37,6 +37,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.faqBloodDonationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.faqWebBrowser = new System.Windows.Forms.WebBrowser();
+            this.emManagementButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,14 +64,14 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // manageDonorToolStripMenuItem
             // 
             this.manageDonorToolStripMenuItem.Name = "manageDonorToolStripMenuItem";
-            this.manageDonorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.manageDonorToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.manageDonorToolStripMenuItem.Text = "Manage Donor";
             this.manageDonorToolStripMenuItem.Click += new System.EventHandler(this.ManageDonorToolStripMenuItem_Click);
             // 
             // SearchDonorToolStripMenuItem
             // 
             this.SearchDonorToolStripMenuItem.Name = "SearchDonorToolStripMenuItem";
-            this.SearchDonorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.SearchDonorToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
             this.SearchDonorToolStripMenuItem.Text = "Search Donor";
             this.SearchDonorToolStripMenuItem.Click += new System.EventHandler(this.SearchDonorToolStripMenuItem_Click);
             // 
@@ -103,15 +104,27 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.faqWebBrowser.MinimumSize = new System.Drawing.Size(20, 20);
             this.faqWebBrowser.Name = "faqWebBrowser";
             this.faqWebBrowser.ScriptErrorsSuppressed = true;
-            this.faqWebBrowser.Size = new System.Drawing.Size(800, 405);
+            this.faqWebBrowser.Size = new System.Drawing.Size(800, 371);
             this.faqWebBrowser.TabIndex = 2;
             this.faqWebBrowser.Url = new System.Uri("https://sites.google.com/view/projectbbms/home", System.UriKind.Absolute);
+            // 
+            // emManagementButton
+            // 
+            this.emManagementButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emManagementButton.Location = new System.Drawing.Point(721, 424);
+            this.emManagementButton.Name = "emManagementButton";
+            this.emManagementButton.Size = new System.Drawing.Size(91, 30);
+            this.emManagementButton.TabIndex = 3;
+            this.emManagementButton.Text = "Logout";
+            this.emManagementButton.UseVisualStyleBackColor = true;
+            this.emManagementButton.Click += new System.EventHandler(this.emManagementButton_Click);
             // 
             // EmployeeHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(824, 464);
+            this.Controls.Add(this.emManagementButton);
             this.Controls.Add(this.faqWebBrowser);
             this.Controls.Add(this.menuStrip1);
             this.Name = "EmployeeHome";
@@ -135,5 +148,6 @@ namespace BloodBankManagementSystem.Presentation_Layer
         private System.Windows.Forms.WebBrowser faqWebBrowser;
         private System.Windows.Forms.ToolStripMenuItem faqBloodDonationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
+        private System.Windows.Forms.Button emManagementButton;
     }
 }

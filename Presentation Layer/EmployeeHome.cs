@@ -40,5 +40,12 @@ namespace BloodBankManagementSystem.Presentation_Layer
             searchDonor.Show();
             this.Hide();
         }
+
+        private void emManagementButton_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }
