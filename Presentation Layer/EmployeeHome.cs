@@ -33,5 +33,12 @@ namespace BloodBankManagementSystem.Presentation_Layer
             string url = "https://sites.google.com/view/aboutusbbms/home";
             faqWebBrowser.Navigate(url);
         }
+
+        private void SearchDonorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SearchDonor searchDonor = new SearchDonor(this);
+            searchDonor.Show();
+            this.Hide();
+        }
     }
 }

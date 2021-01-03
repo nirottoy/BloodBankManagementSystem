@@ -32,11 +32,11 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.servicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageDonorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchDonorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SearchDonorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.faqWebBrowser = new System.Windows.Forms.WebBrowser();
             this.faqBloodDonationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.faqWebBrowser = new System.Windows.Forms.WebBrowser();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +55,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             this.servicesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.manageDonorToolStripMenuItem,
-            this.searchDonorToolStripMenuItem});
+            this.SearchDonorToolStripMenuItem});
             this.servicesToolStripMenuItem.Name = "servicesToolStripMenuItem";
             this.servicesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.servicesToolStripMenuItem.Text = "Services";
@@ -63,15 +63,16 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // manageDonorToolStripMenuItem
             // 
             this.manageDonorToolStripMenuItem.Name = "manageDonorToolStripMenuItem";
-            this.manageDonorToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
+            this.manageDonorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.manageDonorToolStripMenuItem.Text = "Manage Donor";
             this.manageDonorToolStripMenuItem.Click += new System.EventHandler(this.ManageDonorToolStripMenuItem_Click);
             // 
-            // searchDonorToolStripMenuItem
+            // SearchDonorToolStripMenuItem
             // 
-            this.searchDonorToolStripMenuItem.Name = "searchDonorToolStripMenuItem";
-            this.searchDonorToolStripMenuItem.Size = new System.Drawing.Size(153, 22);
-            this.searchDonorToolStripMenuItem.Text = "Search Donor";
+            this.SearchDonorToolStripMenuItem.Name = "SearchDonorToolStripMenuItem";
+            this.SearchDonorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.SearchDonorToolStripMenuItem.Text = "Search Donor";
+            this.SearchDonorToolStripMenuItem.Click += new System.EventHandler(this.SearchDonorToolStripMenuItem_Click);
             // 
             // contactUsToolStripMenuItem
             // 
@@ -82,6 +83,20 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.contactUsToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
             this.contactUsToolStripMenuItem.Text = "Contact Us";
             // 
+            // faqBloodDonationToolStripMenuItem
+            // 
+            this.faqBloodDonationToolStripMenuItem.Name = "faqBloodDonationToolStripMenuItem";
+            this.faqBloodDonationToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.faqBloodDonationToolStripMenuItem.Text = "Blood Donate FAQ";
+            this.faqBloodDonationToolStripMenuItem.Click += new System.EventHandler(this.FaqBloodDonationToolStripMenuItem_Click);
+            // 
+            // aboutUsToolStripMenuItem
+            // 
+            this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.aboutUsToolStripMenuItem.Text = "About Us";
+            this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.AboutUsToolStripMenuItem_Click);
+            // 
             // faqWebBrowser
             // 
             this.faqWebBrowser.Location = new System.Drawing.Point(12, 47);
@@ -91,20 +106,6 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.faqWebBrowser.Size = new System.Drawing.Size(800, 405);
             this.faqWebBrowser.TabIndex = 2;
             this.faqWebBrowser.Url = new System.Uri("https://sites.google.com/view/projectbbms/home", System.UriKind.Absolute);
-            // 
-            // faqBloodDonationToolStripMenuItem
-            // 
-            this.faqBloodDonationToolStripMenuItem.Name = "faqBloodDonationToolStripMenuItem";
-            this.faqBloodDonationToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.faqBloodDonationToolStripMenuItem.Text = "Blood Donate FAQ";
-            this.faqBloodDonationToolStripMenuItem.Click += new System.EventHandler(this.FaqBloodDonationToolStripMenuItem_Click);
-            // 
-            // aboutUsToolStripMenuItem
-            // 
-            this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aboutUsToolStripMenuItem.Text = "About Us";
-            this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.AboutUsToolStripMenuItem_Click);
             // 
             // EmployeeHome
             // 
@@ -129,7 +130,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem servicesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageDonorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem searchDonorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SearchDonorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem contactUsToolStripMenuItem;
         private System.Windows.Forms.WebBrowser faqWebBrowser;
         private System.Windows.Forms.ToolStripMenuItem faqBloodDonationToolStripMenuItem;

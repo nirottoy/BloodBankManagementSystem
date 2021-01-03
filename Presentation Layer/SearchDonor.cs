@@ -13,8 +13,10 @@ namespace BloodBankManagementSystem.Presentation_Layer
 {
     public partial class SearchDonor : Form
     {
-        public SearchDonor()
+        EmployeeHome employeeHome;
+        public SearchDonor(EmployeeHome employeeHome)
         {
+            this.employeeHome = employeeHome;
             InitializeComponent();
         }
 
