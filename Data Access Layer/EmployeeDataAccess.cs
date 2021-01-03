@@ -89,17 +89,6 @@ namespace BloodBankManagementSystem.Data_Access_Layer
             int result = this.dataAccess.ExecuteQuery(sql);
             return result;
         }
-        public List<string> GetEmployeeNames()
-        {
-            string sql = "SELECT * FROM Employees";
-            SqlDataReader reader = this.dataAccess.GetData(sql);
-            List<string> employees = new List<string>();
-            while (reader.Read())
-            {
-                employees.Add(reader["Name"].ToString());
-            }
-            return employees;
-        }
 
         public bool LoginValidation(string username, string password)
         {
