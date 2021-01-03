@@ -30,7 +30,27 @@ namespace BloodBankManagementSystem.Data_Access_Layer
                 employee.Email = reader["Email"].ToString();
                 employee.DateOfBirth = (DateTime)reader["DateOfBirth"];
                 employee.BloodGroup = reader["BloodGroup"].ToString();
-                employee.Password = "*****";
+                employee.Password = reader["Password"].ToString();
+                employees.Add(employee);
+            }
+            return employees;
+        }
+
+        public List<Employee> GetAllEmployeesForEmployee()
+        {
+            string sql = "SELECT * FROM Employees";
+            SqlDataReader reader = this.dataAccess.GetData(sql);
+            List<Employee> employees = new List<Employee>();
+            while (reader.Read())
+            {
+                Employee employee = new Employee();
+                employee.EmployeeId = (int)reader["EmployeeId"];
+                employee.Name = reader["Name"].ToString();
+                employee.Username = reader["Username"].ToString();
+                employee.Email = reader["Email"].ToString();
+                employee.DateOfBirth = (DateTime)reader["DateOfBirth"];
+                employee.BloodGroup = reader["BloodGroup"].ToString();
+                employee.Password = "***Encrypted***";
                 employees.Add(employee);
             }
             return employees;

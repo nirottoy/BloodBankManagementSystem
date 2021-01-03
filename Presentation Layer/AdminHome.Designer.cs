@@ -33,12 +33,12 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.servicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.donorsDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bloodDonateFAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.faqWebBrowser = new System.Windows.Forms.WebBrowser();
             this.logoutButton = new System.Windows.Forms.Button();
+            this.adminListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +58,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.servicesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.employeeManagementToolStripMenuItem,
             this.donorsDataToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            this.adminListToolStripMenuItem});
             this.servicesToolStripMenuItem.Name = "servicesToolStripMenuItem";
             this.servicesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.servicesToolStripMenuItem.Text = "Services";
@@ -76,13 +76,6 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.donorsDataToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.donorsDataToolStripMenuItem.Text = "Donor\'s Data";
             this.donorsDataToolStripMenuItem.Click += new System.EventHandler(this.DonorsDataToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // contactUsToolStripMenuItem
             // 
@@ -128,6 +121,13 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.logoutButton.UseVisualStyleBackColor = true;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
+            // adminListToolStripMenuItem
+            // 
+            this.adminListToolStripMenuItem.Name = "adminListToolStripMenuItem";
+            this.adminListToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.adminListToolStripMenuItem.Text = "Admin List";
+            this.adminListToolStripMenuItem.Click += new System.EventHandler(this.adminListToolStripMenuItem_Click);
+            // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,11 +154,11 @@ namespace BloodBankManagementSystem.Presentation_Layer
         private System.Windows.Forms.ToolStripMenuItem servicesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeeManagementToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem donorsDataToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.WebBrowser faqWebBrowser;
         private System.Windows.Forms.ToolStripMenuItem contactUsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bloodDonateFAQToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
         private System.Windows.Forms.Button logoutButton;
+        private System.Windows.Forms.ToolStripMenuItem adminListToolStripMenuItem;
     }
 }

@@ -21,6 +21,10 @@ namespace BloodBankManagementSystem.Business_Logic_Layer
             return this.employeeDataAccess.GetAllEmployees();
         }
 
+        public List<Employee> GetListOfEmployeesforEmployee()
+        {
+            return this.employeeDataAccess.GetAllEmployeesForEmployee();
+        }
         public int AddNewEmployee(string name, string username, string email, DateTime dateOfBirth, string bloodgroup, string password, string confirmPassword)
         {
             Employee employee = new Employee()

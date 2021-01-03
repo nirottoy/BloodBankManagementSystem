@@ -26,10 +26,10 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.Hide();
         }
 
-        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        //private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    Application.Exit();
+        //}
 
         private void BloodDonateFAQToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -47,6 +47,13 @@ namespace BloodBankManagementSystem.Presentation_Layer
         {
             Login login = new Login();
             login.Show();
+            this.Hide();
+        }
+
+        private void adminListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AdminListForAdmin adminListForAdmin = new AdminListForAdmin();
+            adminListForAdmin.Show();
             this.Hide();
         }
     }

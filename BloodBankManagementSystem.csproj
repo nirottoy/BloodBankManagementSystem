@@ -65,6 +65,12 @@
     <Compile Include="Presentation Layer\AdminHome.Designer.cs">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\AdminListForAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\AdminListForAdmin.Designer.cs">
+      <DependentUpon>AdminListForAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\DonorListForAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentation Layer\AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\AdminListForAdmin.resx">
+      <DependentUpon>AdminListForAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\DonorListForAdmin.resx">
       <DependentUpon>DonorListForAdmin.cs</DependentUpon>

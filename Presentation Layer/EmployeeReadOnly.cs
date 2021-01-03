@@ -26,7 +26,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
         private void EmployeeReadOnly_Load(object sender, EventArgs e)
         {
             EmployeeService employeeService = new EmployeeService();
-            dataGridView1.DataSource = employeeService.GetListOfEmployees();
+            dataGridView1.DataSource = employeeService.GetListOfEmployeesforEmployee();
         }
 
         private void homeButton_Click(object sender, EventArgs e)

@@ -150,8 +150,6 @@ namespace BloodBankManagementSystem.Presentation_Layer
             uBgcomboBox1.Text = employeeDataGridView.Rows[e.RowIndex].Cells[5].Value.ToString();
         }
 
-        
-
         private void EmployeeHomeButton_Click(object sender, EventArgs e)
         {
             adminHome.Show();
