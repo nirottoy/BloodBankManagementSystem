@@ -12,33 +12,29 @@ namespace BloodBankManagementSystem.Presentation_Layer
         {
             this.employeeHome = employeeHome;
             InitializeComponent();
-            doner_insert_button.Click += this.RefreshGridView;
-            doner_insert_button.Click += this.ClearFields;
-            donor_update_button.Click += this.RefreshGridView;
-            donor_update_button.Click += this.ClearFields;
-            delete_Doner_button.Click += this.RefreshGridView;
-            delete_Doner_button.Click += this.ClearFields;
+            DonorInsertButton.Click += this.RefreshGridView;
+            DonorInsertButton.Click += this.ClearFields;
+            DonorUpdateButton.Click += this.RefreshGridView;
+            DonorUpdateButton.Click += this.ClearFields;
+            DonorDeleteButton.Click += this.RefreshGridView;
+            DonorDeleteButton.Click += this.ClearFields;
         }
-
-
         void ClearFields(object sender, EventArgs e)
         {
             addNametxt.Text = addAgetxt.Text = addWeighttxt.Text = addPulsetxt.Text = addHimoglobintxt.Text = addAddresscombo.Text = addPntxt.Text = addHealthtxt.Text = addRhcombo.Text = addBgcombo.Text = string.Empty;
-            dnrNametxt.Text = dnrAgetxt.Text = dnrWeighttxt.Text = dnrPulsetxt.Text = dnrHimoglobintxt.Text = dnrAddresscombo.Text = dnrPntxt.Text = dnrHealthtxt.Text = dnrRhcombo.Text = dnrBgcombo.Text = string.Empty;
+            uNameTextbox.Text = uAgeTextbox.Text = uWeightTextbox.Text = uTempPulseTextbox.Text = uHaemoglobinTextbox.Text = uDivisionComboBox.Text = uPhoneNumberTextBox.Text = uMHITextBox.Text = uRhCombobox.Text = uBGCombo.Text = string.Empty;
         }
         private void DonorManagement_Load(object sender, EventArgs e)
         {
             DonorService ds = new DonorService();
             dataGridView1.DataSource = ds.GetAllListOfDoners();
         }
-
         void RefreshGridView(object sender, EventArgs e)
         {
             DonorService ds = new DonorService();
             dataGridView1.DataSource = ds.GetAllListOfDoners();
         }
-
-        private void Doner_insert_button_Click(object sender, EventArgs e)
+        private void DonorInsertButton_Click(object sender, EventArgs e)
         {
             DonorService donorService = new DonorService();
 
@@ -91,10 +87,10 @@ namespace BloodBankManagementSystem.Presentation_Layer
                                                         Convert.ToDouble(addHimoglobintxt.Text),
                                                         addAddresscombo.Text,
                                                         addPntxt.Text,
-                                                        addHealthtxt.Text,
                                                         addRhcombo.Text,
                                                         addBgcombo.Text,
-                                                        dateTimePicker1.Value);
+                                                        dateTimePicker1.Value,
+                                                        addHealthtxt.Text);
 
                 if (result > 0)
                 {
@@ -106,23 +102,21 @@ namespace BloodBankManagementSystem.Presentation_Layer
                 }
             }
         }
-
-        private void Donor_update_button_Click(object sender, EventArgs e)
+        private void DonorUpdateButton_Click(object sender, EventArgs e)
         {
-
             DonorService donorService = new DonorService();
-            int result = donorService.UpdateDonor(id, 
-                                                  dnrNametxt.Text,
-                                                  Convert.ToInt32(dnrAgetxt.Text),
-                                                  Convert.ToDouble(dnrWeighttxt.Text),
-                                                  dnrPulsetxt.Text,
-                                                  Convert.ToDouble(dnrHimoglobintxt.Text),
-                                                  dnrAddresscombo.Text,
-                                                  dnrPntxt.Text,
-                                                  dnrHealthtxt.Text,
-                                                  dnrRhcombo.Text,
-                                                  dnrBgcombo.Text,
-                                                  dateTimePicker2.Value);
+            int result = donorService.UpdateDonor(id,
+                                                  uNameTextbox.Text,
+                                                  Convert.ToInt32(uAgeTextbox.Text),
+                                                  Convert.ToDouble(uWeightTextbox.Text),
+                                                  uTempPulseTextbox.Text,
+                                                  Convert.ToDouble(uHaemoglobinTextbox.Text),
+                                                  uDivisionComboBox.Text,
+                                                  uPhoneNumberTextBox.Text,
+                                                  uRhCombobox.Text,
+                                                  uBGCombo.Text,
+                                                  uLDDDatetimePicker.Value,
+                                                  addHealthtxt.Text);
             if (result > 0)
             {
                 MessageBox.Show("Employee details updated successfully");
@@ -132,11 +126,10 @@ namespace BloodBankManagementSystem.Presentation_Layer
                 MessageBox.Show("Error in updating employee's details");
             }
         }
-
-        private void Delete_Doner_button_Click(object sender, EventArgs e)
+        private void DonorDeleteButton_Click(object sender, EventArgs e)
         {
-            DonorService ds = new DonorService();
-            int result = ds.DeleteEvent(deleteIdtxt.Text);
+            DonorService donorService = new DonorService();
+            int result = donorService.DeleteDonor(deleteIdtxt.Text);
             if (result > 0)
             {
                 MessageBox.Show("Donor deleted successfully");
@@ -146,7 +139,6 @@ namespace BloodBankManagementSystem.Presentation_Layer
                 MessageBox.Show("Error in deleting Donor");
             }
         }
-
         private void DonorManagement_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
@@ -155,16 +147,16 @@ namespace BloodBankManagementSystem.Presentation_Layer
         private void DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             id = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
-            dnrNametxt.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-            dnrAgetxt.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
-            dnrWeighttxt.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-            dnrPulsetxt.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-            dnrHimoglobintxt.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-            dnrAddresscombo.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-            dnrPntxt.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
-            dnrHealthtxt.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
-            dnrRhcombo.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
-            dnrBgcombo.Text = dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
+            uNameTextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            uAgeTextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            uWeightTextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+            uTempPulseTextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+            uHaemoglobinTextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+            uDivisionComboBox.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+            uPhoneNumberTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+            uRhCombobox.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
+            uBGCombo.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
+            uMHITextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[11].Value.ToString();
         }
 
         private void EmployeeHomeButtton_Click(object sender, EventArgs e)
@@ -172,5 +164,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             employeeHome.Show();
             this.Hide();
         }
+
+        
     }
 }
