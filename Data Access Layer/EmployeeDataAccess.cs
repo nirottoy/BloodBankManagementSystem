@@ -53,22 +53,6 @@ namespace BloodBankManagementSystem.Data_Access_Layer
             return employees;
         }
 
-        public Employee GetEmployee(int id)
-        {
-            string sql = "SELECT * FROM Categories WHERE EmployeeId=" + id;
-            SqlDataReader reader = this.dataAccess.GetData(sql);
-            reader.Read();
-            Employee employee = new Employee();
-            employee.EmployeeId = (int)reader["EmployeeId"];
-            employee.Name = reader["Name"].ToString();
-            employee.Username = reader["Name"].ToString();
-            employee.Email = reader["Name"].ToString();
-            employee.DateOfBirth = (DateTime)reader["DateOfBirth"];
-            employee.BloodGroup = reader["Name"].ToString();
-            employee.Password = reader["Name"].ToString();
-            return employee;
-        }
-
         public int InsertEmployee(Employee employee)
         {
             string sql = "INSERT INTO Employees(Name, Username, Email, DateOfBirth, BloodGroup, Password) VALUES('" + employee.Name + "','"+employee.Username+"','"+employee.Email+"','"+employee.DateOfBirth+"','"+employee.BloodGroup+"','"+employee.Password+"')";
