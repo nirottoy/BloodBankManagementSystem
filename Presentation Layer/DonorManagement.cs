@@ -116,14 +116,14 @@ namespace BloodBankManagementSystem.Presentation_Layer
                                                   uRhCombobox.Text,
                                                   uBGCombo.Text,
                                                   uLDDDatetimePicker.Value,
-                                                  addHealthtxt.Text);
+                                                  uMHITextBox.Text);
             if (result > 0)
             {
-                MessageBox.Show("Employee details updated successfully");
+                MessageBox.Show("Donor's details updated successfully");
             }
             else
             {
-                MessageBox.Show("Error in updating employee's details");
+                MessageBox.Show("Error in updating donor's details");
             }
         }
         private void DonorDeleteButton_Click(object sender, EventArgs e)
@@ -154,9 +154,9 @@ namespace BloodBankManagementSystem.Presentation_Layer
             uHaemoglobinTextbox.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
             uDivisionComboBox.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
             uPhoneNumberTextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
-            uRhCombobox.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
-            uBGCombo.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
-            uMHITextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[11].Value.ToString();
+            uMHITextBox.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
+            uRhCombobox.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
+            uBGCombo.Text = dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();   
         }
 
         private void EmployeeHomeButtton_Click(object sender, EventArgs e)

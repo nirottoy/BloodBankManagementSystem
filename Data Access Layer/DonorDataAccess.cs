@@ -32,35 +32,35 @@ namespace BloodBankManagementSystem.Data_Access_Layer
                 donor.Haemoglobin = (Double)reader["Haemoglobin"];
                 donor.Address = reader["Address"].ToString();
                 donor.PhoneNumber = reader["PhoneNumber"].ToString();
-                donor.MajorHealthIssue = reader["MajorHealthIssue"].ToString();
                 donor.RhFactor = reader["RhFactor"].ToString();
                 donor.BloodGroup = reader["BloodGroup"].ToString();
                 donor.LastDonatedDate = (DateTime)reader["LastDonatedDate"];
+                donor.MajorHealthIssue = reader["MajorHealthIssue"].ToString();
                 donors.Add(donor);
             }
             return donors;
         }
 
-        public Donor GetDonor(int id)
-        {
-            string sql = "SELECT * FROM Categories WHERE EmployeeId=" + id;
-            SqlDataReader reader = this.dataAccess.GetData(sql);
-            reader.Read();
-            Donor donor = new Donor();
-            donor.DonorId = (int)reader["DonorId"];
-            donor.Name = reader["Name"].ToString();
-            donor.Age = (int)reader["Age"];
-            donor.Weight = (Double)reader["Weight"];
-            donor.TempPulse = reader["TempPulse"].ToString();
-            donor.Haemoglobin = (Double)reader["Haemoglobin"];
-            donor.Address = reader["Address"].ToString();
-            donor.PhoneNumber = reader["PhoneNumber"].ToString();
-            donor.RhFactor = reader["RhFactor"].ToString();
-            donor.BloodGroup = reader["BloodGroup"].ToString();
-            donor.LastDonatedDate = (DateTime)reader["LastDonatedDate"];
-            donor.MajorHealthIssue = reader["MajorHealthIssue"].ToString();
-            return donor;
-        }
+        //public Donor GetDonor(int id)
+        //{
+        //    string sql = "SELECT * FROM Categories WHERE EmployeeId=" + id;
+        //    SqlDataReader reader = this.dataAccess.GetData(sql);
+        //    reader.Read();
+        //    Donor donor = new Donor();
+        //    donor.DonorId = (int)reader["DonorId"];
+        //    donor.Name = reader["Name"].ToString();
+        //    donor.Age = (int)reader["Age"];
+        //    donor.Weight = (Double)reader["Weight"];
+        //    donor.TempPulse = reader["TempPulse"].ToString();
+        //    donor.Haemoglobin = (Double)reader["Haemoglobin"];
+        //    donor.Address = reader["Address"].ToString();
+        //    donor.PhoneNumber = reader["PhoneNumber"].ToString();
+        //    donor.RhFactor = reader["RhFactor"].ToString();
+        //    donor.BloodGroup = reader["BloodGroup"].ToString();
+        //    donor.LastDonatedDate = (DateTime)reader["LastDonatedDate"];
+        //    donor.MajorHealthIssue = reader["MajorHealthIssue"].ToString();
+        //    return donor;
+        //}
 
         public int InsertDonor(Donor donor)
         {

@@ -661,7 +661,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1357, 749);
+            this.ClientSize = new System.Drawing.Size(1357, 559);
             this.Controls.Add(this.employeeHomeButtton);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.dataGridView1);

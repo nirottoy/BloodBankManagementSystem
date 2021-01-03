@@ -21,49 +21,49 @@ namespace BloodBankManagementSystem.Business_Logic_Layer
             return this.donorAccess.GetAllDonors();
         }
 
-        public int AddNewDonor(string dnrName, int dnrAge, double dnrWeight, string dnrTemp, double dnrHimoglobin, string dnrAddress, string dnrPn, string dnrRhf, string dnrBg, DateTime dnrLast, string dnrHealth)
+        public int AddNewDonor(string name, int age, double weight, string temp, double haemoglobin, string address, string phoneNumber, string rhF, string bloodGroup, DateTime lastDonatedDate, string majorHealthIssue)
         {
-            Donor dnr = new Donor();
+            Donor donor = new Donor();
 
-            dnr.Name = dnrName;
-            dnr.Age = dnrAge;
-            dnr.Weight = dnrWeight;
-            dnr.TempPulse = dnrTemp;
-            dnr.Haemoglobin = dnrHimoglobin;
-            dnr.Address = dnrAddress;
-            dnr.PhoneNumber = dnrPn;
-            dnr.RhFactor = dnrRhf;
-            dnr.BloodGroup = dnrBg;
-            dnr.LastDonatedDate = dnrLast;
-            dnr.MajorHealthIssue = dnrHealth;
+            donor.Name = name;
+            donor.Age = age;
+            donor.Weight = weight;
+            donor.TempPulse = temp;
+            donor.Haemoglobin = haemoglobin;
+            donor.Address = address;
+            donor.PhoneNumber = phoneNumber;
+            donor.RhFactor = rhF;
+            donor.BloodGroup = bloodGroup;
+            donor.LastDonatedDate = lastDonatedDate;
+            donor.MajorHealthIssue = majorHealthIssue;
 
-            return this.donorAccess.InsertDonor(dnr);
+            return this.donorAccess.InsertDonor(donor);
         }
 
-        public int UpdateDonor(int id, string dnrName, int dnrAge, double dnrWeight, string dnrTemp, double dnrHimoglobin, string dnrAddress, string dnrPn, string dnrRhf, string dnrBg, DateTime dnrLast, string dnrHealth)
+        public int UpdateDonor(int id, string uName, int uAge, double uWeight, string uTemp, double uHaemoglobin, string uAddress, string uPhoneNumber, string uRhf, string uBg, DateTime uLDD, string uMHI)
         {
 
             Donor donor = new Donor()
             {
                 DonorId = id,
-                Name = dnrName,
-                Age = dnrAge,
-                Weight = dnrWeight,
-                TempPulse = dnrTemp,
-                Haemoglobin = dnrHimoglobin,
-                Address = dnrAddress,
-                PhoneNumber = dnrPn,
-                RhFactor = dnrRhf,
-                BloodGroup = dnrBg,
-                LastDonatedDate = dnrLast,
-                MajorHealthIssue = dnrHealth
+                Name = uName,
+                Age = uAge,
+                Weight = uWeight,
+                TempPulse = uTemp,
+                Haemoglobin = uHaemoglobin,
+                Address = uAddress,
+                PhoneNumber = uPhoneNumber,
+                RhFactor = uRhf,
+                BloodGroup = uBg,
+                LastDonatedDate = uLDD,
+                MajorHealthIssue = uMHI
             };
             return this.donorAccess.UpdateDonor(donor);
 
         }
-        public int DeleteDonor(string dnrId)
+        public int DeleteDonor(string donorID)
         {
-            return this.donorAccess.DeleteDonor(Convert.ToInt32(dnrId));
+            return this.donorAccess.DeleteDonor(Convert.ToInt32(donorID));
 
         }
 
