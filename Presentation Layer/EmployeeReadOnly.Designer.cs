@@ -40,9 +40,9 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // homeButton
             // 
             this.homeButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.homeButton.Location = new System.Drawing.Point(1813, 12);
+            this.homeButton.Location = new System.Drawing.Point(1268, 14);
             this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(79, 33);
+            this.homeButton.Size = new System.Drawing.Size(90, 33);
             this.homeButton.TabIndex = 0;
             this.homeButton.Text = "Home";
             this.homeButton.UseVisualStyleBackColor = true;
@@ -51,7 +51,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // logoutButton
             // 
             this.logoutButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.Location = new System.Drawing.Point(1802, 941);
+            this.logoutButton.Location = new System.Drawing.Point(1268, 704);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(90, 33);
             this.logoutButton.TabIndex = 1;
@@ -64,10 +64,10 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(550, 196);
+            this.dataGridView1.Location = new System.Drawing.Point(358, 60);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(737, 574);
+            this.dataGridView1.Size = new System.Drawing.Size(737, 457);
             this.dataGridView1.TabIndex = 2;
             // 
             // label1
@@ -76,7 +76,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(828, 158);
+            this.label1.Location = new System.Drawing.Point(619, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(192, 35);
             this.label1.TabIndex = 3;
@@ -87,7 +87,8 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.logoutButton);

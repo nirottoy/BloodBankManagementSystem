@@ -155,5 +155,12 @@ namespace BloodBankManagementSystem.Presentation_Layer
             adminHome.Show();
             this.Hide();
         }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }

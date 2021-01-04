@@ -52,9 +52,9 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.groupBox2.Controls.Add(this.DonorByDivisionComboBox);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(958, 53);
+            this.groupBox2.Location = new System.Drawing.Point(711, 53);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(940, 516);
+            this.groupBox2.Size = new System.Drawing.Size(651, 474);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Donors By Division";
@@ -67,7 +67,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.dataGridView2.Location = new System.Drawing.Point(10, 132);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(923, 378);
+            this.dataGridView2.Size = new System.Drawing.Size(635, 336);
             this.dataGridView2.TabIndex = 2;
             // 
             // DonorByDivisionComboBox
@@ -75,7 +75,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.DonorByDivisionComboBox.FormattingEnabled = true;
             this.DonorByDivisionComboBox.Location = new System.Drawing.Point(116, 56);
             this.DonorByDivisionComboBox.Name = "DonorByDivisionComboBox";
-            this.DonorByDivisionComboBox.Size = new System.Drawing.Size(817, 30);
+            this.DonorByDivisionComboBox.Size = new System.Drawing.Size(519, 30);
             this.DonorByDivisionComboBox.TabIndex = 1;
             this.DonorByDivisionComboBox.SelectedIndexChanged += new System.EventHandler(this.DonorByDivisionComboBox_SelectedIndexChanged);
             // 
@@ -102,7 +102,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.DonorByBloodGroupComboBox.FormattingEnabled = true;
             this.DonorByBloodGroupComboBox.Location = new System.Drawing.Point(116, 56);
             this.DonorByBloodGroupComboBox.Name = "DonorByBloodGroupComboBox";
-            this.DonorByBloodGroupComboBox.Size = new System.Drawing.Size(818, 30);
+            this.DonorByBloodGroupComboBox.Size = new System.Drawing.Size(519, 30);
             this.DonorByBloodGroupComboBox.TabIndex = 1;
             this.DonorByBloodGroupComboBox.SelectedIndexChanged += new System.EventHandler(this.DonorByBloodGroupComboBox_SelectedIndexChanged);
             // 
@@ -114,7 +114,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.dataGridView1.Location = new System.Drawing.Point(10, 132);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(924, 378);
+            this.dataGridView1.Size = new System.Drawing.Size(635, 336);
             this.dataGridView1.TabIndex = 2;
             // 
             // groupBox1
@@ -125,7 +125,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 53);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(940, 516);
+            this.groupBox1.Size = new System.Drawing.Size(651, 474);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Donors By Blood Group";
@@ -133,9 +133,9 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // searchDonorHomeButton
             // 
             this.searchDonorHomeButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchDonorHomeButton.Location = new System.Drawing.Point(1802, 12);
+            this.searchDonorHomeButton.Location = new System.Drawing.Point(1268, 12);
             this.searchDonorHomeButton.Name = "searchDonorHomeButton";
-            this.searchDonorHomeButton.Size = new System.Drawing.Size(89, 35);
+            this.searchDonorHomeButton.Size = new System.Drawing.Size(90, 35);
             this.searchDonorHomeButton.TabIndex = 3;
             this.searchDonorHomeButton.Text = "Home";
             this.searchDonorHomeButton.UseVisualStyleBackColor = true;
@@ -144,7 +144,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // searchDonorLogoutButton
             // 
             this.searchDonorLogoutButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchDonorLogoutButton.Location = new System.Drawing.Point(1802, 950);
+            this.searchDonorLogoutButton.Location = new System.Drawing.Point(1268, 704);
             this.searchDonorLogoutButton.Name = "searchDonorLogoutButton";
             this.searchDonorLogoutButton.Size = new System.Drawing.Size(90, 33);
             this.searchDonorLogoutButton.TabIndex = 4;
@@ -157,7 +157,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.searchDonorLogoutButton);
             this.Controls.Add(this.searchDonorHomeButton);
             this.Controls.Add(this.groupBox1);

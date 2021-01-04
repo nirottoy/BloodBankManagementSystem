@@ -97,16 +97,16 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(814, 82);
+            this.dataGridView1.Location = new System.Drawing.Point(682, 82);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1078, 596);
+            this.dataGridView1.Size = new System.Drawing.Size(676, 596);
             this.dataGridView1.TabIndex = 30;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellClick);
             // 
             // DonorDeleteButton
             // 
-            this.DonorDeleteButton.Location = new System.Drawing.Point(236, 120);
+            this.DonorDeleteButton.Location = new System.Drawing.Point(174, 120);
             this.DonorDeleteButton.Name = "DonorDeleteButton";
             this.DonorDeleteButton.Size = new System.Drawing.Size(129, 33);
             this.DonorDeleteButton.TabIndex = 27;
@@ -118,7 +118,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             this.deleteIdtxt.Location = new System.Drawing.Point(126, 63);
             this.deleteIdtxt.Name = "deleteIdtxt";
-            this.deleteIdtxt.Size = new System.Drawing.Size(239, 26);
+            this.deleteIdtxt.Size = new System.Drawing.Size(175, 26);
             this.deleteIdtxt.TabIndex = 15;
             // 
             // groupBox3
@@ -128,9 +128,9 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.groupBox3.Controls.Add(this.deleteIdtxt);
             this.groupBox3.Controls.Add(this.label21);
             this.groupBox3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(408, 519);
+            this.groupBox3.Location = new System.Drawing.Point(347, 519);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(380, 159);
+            this.groupBox3.Size = new System.Drawing.Size(329, 159);
             this.groupBox3.TabIndex = 29;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Delete Donor";
@@ -159,7 +159,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             "Sylhet"});
             this.uDivisionComboBox.Location = new System.Drawing.Point(165, 215);
             this.uDivisionComboBox.Name = "uDivisionComboBox";
-            this.uDivisionComboBox.Size = new System.Drawing.Size(197, 30);
+            this.uDivisionComboBox.Size = new System.Drawing.Size(135, 30);
             this.uDivisionComboBox.TabIndex = 34;
             // 
             // groupBox2
@@ -189,9 +189,9 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.groupBox2.Controls.Add(this.uTempPulseTextbox);
             this.groupBox2.Controls.Add(this.uNameTextbox);
             this.groupBox2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(408, 12);
+            this.groupBox2.Location = new System.Drawing.Point(347, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(380, 501);
+            this.groupBox2.Size = new System.Drawing.Size(329, 501);
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Update Donor";
@@ -272,7 +272,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             this.uPhoneNumberTextBox.Location = new System.Drawing.Point(165, 255);
             this.uPhoneNumberTextBox.Name = "uPhoneNumberTextBox";
-            this.uPhoneNumberTextBox.Size = new System.Drawing.Size(197, 26);
+            this.uPhoneNumberTextBox.Size = new System.Drawing.Size(135, 26);
             this.uPhoneNumberTextBox.TabIndex = 32;
             // 
             // uMHITextBox
@@ -280,7 +280,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.uMHITextBox.Location = new System.Drawing.Point(166, 419);
             this.uMHITextBox.Multiline = true;
             this.uMHITextBox.Name = "uMHITextBox";
-            this.uMHITextBox.Size = new System.Drawing.Size(197, 26);
+            this.uMHITextBox.Size = new System.Drawing.Size(135, 26);
             this.uMHITextBox.TabIndex = 21;
             // 
             // label19
@@ -312,9 +312,9 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             // DonorUpdateButton
             // 
-            this.DonorUpdateButton.Location = new System.Drawing.Point(218, 462);
+            this.DonorUpdateButton.Location = new System.Drawing.Point(165, 462);
             this.DonorUpdateButton.Name = "DonorUpdateButton";
-            this.DonorUpdateButton.Size = new System.Drawing.Size(144, 33);
+            this.DonorUpdateButton.Size = new System.Drawing.Size(136, 33);
             this.DonorUpdateButton.TabIndex = 26;
             this.DonorUpdateButton.Text = "Update Donor";
             this.DonorUpdateButton.UseVisualStyleBackColor = true;
@@ -322,11 +322,11 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             // uLDDDatetimePicker
             // 
-            this.uLDDDatetimePicker.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uLDDDatetimePicker.Font = new System.Drawing.Font("Trebuchet MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uLDDDatetimePicker.Location = new System.Drawing.Point(165, 381);
             this.uLDDDatetimePicker.MaxDate = new System.DateTime(2021, 1, 4, 0, 0, 0, 0);
             this.uLDDDatetimePicker.Name = "uLDDDatetimePicker";
-            this.uLDDDatetimePicker.Size = new System.Drawing.Size(200, 20);
+            this.uLDDDatetimePicker.Size = new System.Drawing.Size(138, 17);
             this.uLDDDatetimePicker.TabIndex = 18;
             this.uLDDDatetimePicker.Value = new System.DateTime(2021, 1, 4, 0, 0, 0, 0);
             // 
@@ -338,7 +338,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             "Rh-"});
             this.uRhCombobox.Location = new System.Drawing.Point(165, 289);
             this.uRhCombobox.Name = "uRhCombobox";
-            this.uRhCombobox.Size = new System.Drawing.Size(197, 30);
+            this.uRhCombobox.Size = new System.Drawing.Size(135, 30);
             this.uRhCombobox.TabIndex = 14;
             // 
             // uBGCombo
@@ -355,42 +355,42 @@ namespace BloodBankManagementSystem.Presentation_Layer
             "O-"});
             this.uBGCombo.Location = new System.Drawing.Point(165, 329);
             this.uBGCombo.Name = "uBGCombo";
-            this.uBGCombo.Size = new System.Drawing.Size(197, 30);
+            this.uBGCombo.Size = new System.Drawing.Size(135, 30);
             this.uBGCombo.TabIndex = 14;
             // 
             // uAgeTextbox
             // 
             this.uAgeTextbox.Location = new System.Drawing.Point(166, 65);
             this.uAgeTextbox.Name = "uAgeTextbox";
-            this.uAgeTextbox.Size = new System.Drawing.Size(197, 26);
+            this.uAgeTextbox.Size = new System.Drawing.Size(135, 26);
             this.uAgeTextbox.TabIndex = 23;
             // 
             // uWeightTextbox
             // 
             this.uWeightTextbox.Location = new System.Drawing.Point(166, 99);
             this.uWeightTextbox.Name = "uWeightTextbox";
-            this.uWeightTextbox.Size = new System.Drawing.Size(197, 26);
+            this.uWeightTextbox.Size = new System.Drawing.Size(135, 26);
             this.uWeightTextbox.TabIndex = 22;
             // 
             // uHaemoglobinTextbox
             // 
             this.uHaemoglobinTextbox.Location = new System.Drawing.Point(166, 180);
             this.uHaemoglobinTextbox.Name = "uHaemoglobinTextbox";
-            this.uHaemoglobinTextbox.Size = new System.Drawing.Size(197, 26);
+            this.uHaemoglobinTextbox.Size = new System.Drawing.Size(135, 26);
             this.uHaemoglobinTextbox.TabIndex = 16;
             // 
             // uTempPulseTextbox
             // 
             this.uTempPulseTextbox.Location = new System.Drawing.Point(166, 138);
             this.uTempPulseTextbox.Name = "uTempPulseTextbox";
-            this.uTempPulseTextbox.Size = new System.Drawing.Size(197, 26);
+            this.uTempPulseTextbox.Size = new System.Drawing.Size(135, 26);
             this.uTempPulseTextbox.TabIndex = 15;
             // 
             // uNameTextbox
             // 
             this.uNameTextbox.Location = new System.Drawing.Point(165, 28);
             this.uNameTextbox.Name = "uNameTextbox";
-            this.uNameTextbox.Size = new System.Drawing.Size(198, 26);
+            this.uNameTextbox.Size = new System.Drawing.Size(135, 26);
             this.uNameTextbox.TabIndex = 14;
             // 
             // addAddresscombo
@@ -407,7 +407,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             "Sylhet"});
             this.addAddresscombo.Location = new System.Drawing.Point(174, 207);
             this.addAddresscombo.Name = "addAddresscombo";
-            this.addAddresscombo.Size = new System.Drawing.Size(197, 30);
+            this.addAddresscombo.Size = new System.Drawing.Size(135, 30);
             this.addAddresscombo.TabIndex = 30;
             // 
             // label22
@@ -423,14 +423,14 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // 
             this.addPntxt.Location = new System.Drawing.Point(175, 253);
             this.addPntxt.Name = "addPntxt";
-            this.addPntxt.Size = new System.Drawing.Size(197, 26);
+            this.addPntxt.Size = new System.Drawing.Size(135, 26);
             this.addPntxt.TabIndex = 28;
             // 
             // DonorInsertButton
             // 
-            this.DonorInsertButton.Location = new System.Drawing.Point(240, 462);
+            this.DonorInsertButton.Location = new System.Drawing.Point(174, 462);
             this.DonorInsertButton.Name = "DonorInsertButton";
-            this.DonorInsertButton.Size = new System.Drawing.Size(131, 33);
+            this.DonorInsertButton.Size = new System.Drawing.Size(138, 33);
             this.DonorInsertButton.TabIndex = 27;
             this.DonorInsertButton.Text = "Register Donor";
             this.DonorInsertButton.UseVisualStyleBackColor = true;
@@ -465,18 +465,18 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(390, 501);
+            this.groupBox1.Size = new System.Drawing.Size(329, 501);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Donor Registration";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Trebuchet MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("Trebuchet MS", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(174, 379);
             this.dateTimePicker1.MaxDate = new System.DateTime(2021, 1, 4, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(138, 17);
             this.dateTimePicker1.TabIndex = 18;
             this.dateTimePicker1.Value = new System.DateTime(2021, 1, 4, 0, 0, 0, 0);
             // 
@@ -494,7 +494,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.addHealthtxt.Location = new System.Drawing.Point(174, 422);
             this.addHealthtxt.Multiline = true;
             this.addHealthtxt.Name = "addHealthtxt";
-            this.addHealthtxt.Size = new System.Drawing.Size(197, 26);
+            this.addHealthtxt.Size = new System.Drawing.Size(135, 26);
             this.addHealthtxt.TabIndex = 21;
             // 
             // label8
@@ -514,7 +514,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             "Rh-"});
             this.addRhcombo.Location = new System.Drawing.Point(175, 289);
             this.addRhcombo.Name = "addRhcombo";
-            this.addRhcombo.Size = new System.Drawing.Size(197, 30);
+            this.addRhcombo.Size = new System.Drawing.Size(135, 30);
             this.addRhcombo.TabIndex = 14;
             // 
             // label9
@@ -540,42 +540,42 @@ namespace BloodBankManagementSystem.Presentation_Layer
             "O-"});
             this.addBgcombo.Location = new System.Drawing.Point(175, 329);
             this.addBgcombo.Name = "addBgcombo";
-            this.addBgcombo.Size = new System.Drawing.Size(197, 30);
+            this.addBgcombo.Size = new System.Drawing.Size(135, 30);
             this.addBgcombo.TabIndex = 14;
             // 
             // addAgetxt
             // 
             this.addAgetxt.Location = new System.Drawing.Point(175, 62);
             this.addAgetxt.Name = "addAgetxt";
-            this.addAgetxt.Size = new System.Drawing.Size(197, 26);
+            this.addAgetxt.Size = new System.Drawing.Size(135, 26);
             this.addAgetxt.TabIndex = 23;
             // 
             // addWeighttxt
             // 
             this.addWeighttxt.Location = new System.Drawing.Point(175, 95);
             this.addWeighttxt.Name = "addWeighttxt";
-            this.addWeighttxt.Size = new System.Drawing.Size(197, 26);
+            this.addWeighttxt.Size = new System.Drawing.Size(135, 26);
             this.addWeighttxt.TabIndex = 22;
             // 
             // addHimoglobintxt
             // 
             this.addHimoglobintxt.Location = new System.Drawing.Point(175, 169);
             this.addHimoglobintxt.Name = "addHimoglobintxt";
-            this.addHimoglobintxt.Size = new System.Drawing.Size(197, 26);
+            this.addHimoglobintxt.Size = new System.Drawing.Size(135, 26);
             this.addHimoglobintxt.TabIndex = 16;
             // 
             // addPulsetxt
             // 
             this.addPulsetxt.Location = new System.Drawing.Point(175, 129);
             this.addPulsetxt.Name = "addPulsetxt";
-            this.addPulsetxt.Size = new System.Drawing.Size(197, 26);
+            this.addPulsetxt.Size = new System.Drawing.Size(135, 26);
             this.addPulsetxt.TabIndex = 15;
             // 
             // addNametxt
             // 
             this.addNametxt.Location = new System.Drawing.Point(174, 25);
             this.addNametxt.Name = "addNametxt";
-            this.addNametxt.Size = new System.Drawing.Size(198, 26);
+            this.addNametxt.Size = new System.Drawing.Size(136, 26);
             this.addNametxt.TabIndex = 14;
             // 
             // label2
@@ -647,7 +647,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label24.Location = new System.Drawing.Point(1338, 32);
+            this.label24.Location = new System.Drawing.Point(952, 40);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(144, 35);
             this.label24.TabIndex = 45;
@@ -656,7 +656,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // employeeHomeButtton
             // 
             this.employeeHomeButtton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employeeHomeButtton.Location = new System.Drawing.Point(1765, 32);
+            this.employeeHomeButtton.Location = new System.Drawing.Point(1231, 12);
             this.employeeHomeButtton.Name = "employeeHomeButtton";
             this.employeeHomeButtton.Size = new System.Drawing.Size(127, 33);
             this.employeeHomeButtton.TabIndex = 31;
@@ -667,7 +667,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             // logoutButton
             // 
             this.logoutButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutButton.Location = new System.Drawing.Point(1802, 950);
+            this.logoutButton.Location = new System.Drawing.Point(1268, 704);
             this.logoutButton.Name = "logoutButton";
             this.logoutButton.Size = new System.Drawing.Size(90, 33);
             this.logoutButton.TabIndex = 46;
@@ -680,7 +680,8 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.logoutButton);
             this.Controls.Add(this.employeeHomeButtton);
             this.Controls.Add(this.label24);
@@ -688,6 +689,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.DoubleBuffered = true;
             this.Name = "DonorManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Blood Bank Management System - Doonor Management";
