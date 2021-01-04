@@ -94,7 +94,7 @@ namespace BloodBankManagementSystem.Presentation_Layer
             this.Controls.Add(this.homeButton);
             this.Name = "EmployeeReadOnly";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Blood Bank Management System - Employee List";
+            this.Text = "Blood Bank Management System - Employee List(Read-Only)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EmployeeReadOnly_FormClosing);
             this.Load += new System.EventHandler(this.EmployeeReadOnly_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

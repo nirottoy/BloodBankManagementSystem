@@ -62,7 +62,7 @@ namespace BloodBankManagementSystem.Data_Access_Layer
 
         public int UpdateEmployee(Employee employee)
         {
-            string sql = "UPDATE Employees SET Name = '" + employee.Name + "', Username = '" + employee.Username + "', Email = '" + employee.Email + "', DateOfBirth = '" + employee.DateOfBirth + "', BloodGroup = '" + employee.BloodGroup + "', Password = '" + employee.Password + "' WHERE EmployeeId = " + employee.EmployeeId;
+            string sql = "UPDATE Employees SET Name = '" + employee.Name + "', Username = '" + employee.Username + "', Email = '" + employee.Email + "', DateOfBirth = '" + employee.DateOfBirth + "', BloodGroup = '" + employee.BloodGroup + "' WHERE EmployeeId = " + employee.EmployeeId;
             int result = this.dataAccess.ExecuteQuery(sql);
             return result;
         }
